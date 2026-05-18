@@ -13,6 +13,13 @@ export default function GearChecklistPage() {
       <Breadcrumbs items={[{ label: "Gear Checklist", href: "/gear-checklist/" }]} />
       <h1 className="text-4xl font-black text-ink">Pickleball Gear Checklist for Beginners</h1>
       <p className="mt-4 max-w-3xl leading-8 text-slate-700">Start with gear that helps you play more comfortably and consistently. Leave specialized upgrades until you know your habits.</p>
+      <section className="mt-8 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+        <h2 className="text-2xl font-black text-ink">A simple way to buy your first kit</h2>
+        <div className="mt-4 grid gap-5 leading-8 text-slate-700 md:grid-cols-2">
+          <p>Most new players need fewer items than they think. A comfortable paddle, the right balls for the court, water, and a basic way to carry gear will cover most first games, clinics, and open-play sessions.</p>
+          <p>Use your first month to learn what actually bothers you. If your paddle feels awkward, upgrade the paddle. If you keep losing balls, buy a larger ball pack. If your gear ends up scattered in the car, add a bag.</p>
+        </div>
+      </section>
       <div className="mt-8 grid gap-5 md:grid-cols-2">
         <ChecklistSection title="Must-have gear" items={["Beginner-friendly paddle", "Indoor or outdoor balls for your main court type", "Water bottle", "Comfortable court-safe shoes", "Small bag or tote"]} />
         <ChecklistSection title="Nice-to-have gear" items={["Paddle cover", "Extra overgrip", "Small towel", "Ball holder clip", "Practice cones"]} />

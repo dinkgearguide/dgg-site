@@ -4,6 +4,23 @@ import type { Product } from "@/types/product";
 import { trackAffiliateClick } from "@/lib/affiliate";
 
 export function AffiliateButton({ product }: { product: Product }) {
+  const isPlaceholder = product.affiliateUrl === "#replace-with-affiliate-link";
+
+  if (isPlaceholder) {
+    return (
+      <div className="space-y-1">
+        <button
+          type="button"
+          disabled
+          className="inline-flex min-h-11 cursor-not-allowed items-center justify-center rounded-md bg-slate-200 px-5 py-3 text-sm font-bold text-slate-500"
+        >
+          Check current price
+        </button>
+        <p className="text-xs font-medium text-slate-500">Link will be added after affiliate approval</p>
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-1">
       <a

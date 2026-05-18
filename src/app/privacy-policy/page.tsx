@@ -1,16 +1,16 @@
 import { LegalPageLayout } from "@/components/LegalPageLayout";
 import { pageMetadata } from "@/lib/seo";
 
-export const metadata = pageMetadata("Privacy Policy | Dink Gear Guide", "Privacy policy placeholder for the static Dink Gear Guide site.", "/privacy-policy/");
+export const metadata = pageMetadata("Privacy Policy | Dink Gear Guide", "Privacy policy for the static Dink Gear Guide site.", "/privacy-policy/");
 
 export default function PrivacyPolicyPage() {
   return (
     <LegalPageLayout title="Privacy Policy">
-      <p>This is placeholder legal content and should be reviewed before launch.</p>
-      <p>The current static site does not collect personal information through backend systems. There is no database, authentication system, checkout, or server-side form handling.</p>
-      <p>Contact and email forms are placeholders unless later connected to a third-party service. They currently do not transmit or store submitted data.</p>
-      <p>Affiliate partners may use their own tracking after users click outbound affiliate links. Visitors should review those partners&apos; privacy policies.</p>
-      <p>Analytics may be added later. If analytics are added, this policy should be updated to explain what is collected and how it is used.</p>
+      <p>Dink Gear Guide is currently a static website. It does not use a backend database, account system, checkout flow, payment processor, or server-side form handler.</p>
+      <p>The contact form and email signup form are currently interface-only features. They do not transmit, store, or process submitted names, email addresses, or messages unless a third-party provider is connected in the future.</p>
+      <p>Affiliate partners and retailers may use their own tracking technologies after you click an outbound product link. Their websites are governed by their own privacy policies, not this policy.</p>
+      <p>Dink Gear Guide may add privacy-conscious analytics in the future to understand aggregate traffic and improve the site. If analytics are added, this policy should be updated to describe the provider, data collected, and opt-out options where applicable.</p>
+      <p>Because this site is static, requests for access, deletion, or correction are limited to information the site actually stores. At this time, the site does not store visitor account data.</p>
     </LegalPageLayout>
   );
 }

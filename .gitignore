@@ -2,7 +2,9 @@ node_modules/
 .next/
 out/
 
+# macOS
 .DS_Store
+**/.DS_Store
 *.log
 
 .env*

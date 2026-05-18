@@ -14,6 +14,13 @@ export default function GiftsPage() {
       <Breadcrumbs items={[{ label: "Gifts", href: "/gifts/" }]} />
       <h1 className="text-4xl font-black text-ink">Best Pickleball Gifts</h1>
       <p className="mt-4 max-w-3xl leading-8 text-slate-700">Good pickleball gifts are useful, easy to understand, and do not require guessing a player&apos;s advanced preferences.</p>
+      <section className="mt-8 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+        <h2 className="text-2xl font-black text-ink">Safer gift choices for new players</h2>
+        <div className="mt-4 grid gap-5 leading-8 text-slate-700 md:grid-cols-2">
+          <p>The easiest pickleball gifts are the ones players will use even if they already own a paddle. Balls, overgrips, towels, paddle covers, and simple court accessories are low-risk because they support regular play without requiring exact preference matching.</p>
+          <p>If you want to give a bigger gift, think about the recipient&apos;s situation. A brand-new player may appreciate a starter set. Someone who already attends open play may prefer a better bag, extra balls, or a practical bundle of small items they can keep in the car.</p>
+        </div>
+      </section>
       <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         <ChecklistSection title="Gifts under $25" items={["Overgrips", "Paddle cover", "Ball holder clip", "Court towel"]} />
         <ChecklistSection title="Gifts under $50" items={["Ball packs", "Compact sling bag", "Practice cones", "New player kit"]} />

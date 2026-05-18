@@ -1,6 +1,7 @@
 import { CategoryCard } from "@/components/CategoryCard";
 import { EmailSignup } from "@/components/EmailSignup";
 import { Hero } from "@/components/Hero";
+import { IconBadge, type IconName } from "@/components/IconBadge";
 import { ProductGrid } from "@/components/ProductGrid";
 import { products } from "@/data/products";
 import { pageMetadata } from "@/lib/seo";
@@ -15,6 +16,12 @@ const start = [
   ["Beginner Gear Checklist", "/gear-checklist/", "Start with the gear that matters for first games and skip the extras until later."],
   ["Best Starter Sets", "/starter-sets/", "Good fits for couples, families, and casual groups who need several basics at once."],
   ["Best Beginner Paddles", "/beginner-paddles/", "Simple paddle guidance focused on control, comfort, and beginner-friendly value."]
+];
+
+const essentials: Array<{ icon: IconName; text: string }> = [
+  { icon: "paddle", text: "A comfortable paddle" },
+  { icon: "ball", text: "The right ball for your court" },
+  { icon: "bag", text: "A simple way to carry and protect gear" }
 ];
 
 export default function Home() {
@@ -36,7 +43,12 @@ export default function Home() {
       </Section>
       <Section title="What New Players Actually Need">
         <div className="grid gap-4 md:grid-cols-3">
-          {["A comfortable paddle", "The right ball for your court", "A simple way to carry and protect gear"].map((item) => <p key={item} className="rounded-lg border border-slate-200 bg-white p-5 text-slate-700">{item}</p>)}
+          {essentials.map((item) => (
+            <div key={item.text} className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+              <IconBadge icon={item.icon} />
+              <p className="mt-4 font-bold leading-6 text-slate-700">{item.text}</p>
+            </div>
+          ))}
         </div>
       </Section>
       <Section title="Featured Products">

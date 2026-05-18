@@ -15,7 +15,7 @@ export function Footer() {
         <div>
           <p className="font-black">© Dink Gear Guide</p>
           <p className="mt-2 max-w-xl text-sm text-slate-300">Beginner-friendly pickleball gear without the guesswork.</p>
-          <p className="mt-2 text-sm text-slate-300">As an Amazon Associate I earn from qualifying purchases.</p>
+          <p className="mt-2 text-sm text-slate-300">Product links may be affiliate links. See the disclosure page for details.</p>
         </div>
         <nav className="flex flex-wrap gap-3 text-sm" aria-label="Footer navigation">
           {links.map(([label, href]) => (

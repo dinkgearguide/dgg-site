@@ -17,7 +17,7 @@ export function ProductDetail({ product }: { product: Product }) {
         </dl>
         <p className="mt-6 leading-8 text-slate-700">{product.longDescription}</p>
         <div className="mt-6 rounded-lg border border-emerald-100 bg-emerald-50 p-4 text-sm text-emerald-950">
-          Disclosure: This is an affiliate link. I may earn a commission if you buy through my link, at no extra cost to you.
+          Disclosure: Product links may be affiliate links when active. If you buy through an affiliate link, I may earn a commission at no extra cost to you.
         </div>
         <div className="mt-5"><AffiliateButton product={product} /></div>
       </div>

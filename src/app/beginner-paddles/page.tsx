@@ -15,6 +15,13 @@ export default function BeginnerPaddlesPage() {
       <h1 className="text-4xl font-black text-ink">Best Beginner Pickleball Paddles</h1>
       <p className="mt-4 max-w-3xl leading-8 text-slate-700">New players usually benefit from control, comfort, and forgiving paddle shape before chasing advanced power specs.</p>
       <p className="mt-4 rounded-lg border border-blue-100 bg-blue-50 p-4 text-sm text-blue-950">If you plan to play in sanctioned tournaments, verify that your paddle is approved by the relevant governing body before buying.</p>
+      <section className="mt-8 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+        <h2 className="text-2xl font-black text-ink">What beginners should prioritize</h2>
+        <div className="mt-4 grid gap-5 leading-8 text-slate-700 md:grid-cols-2">
+          <p>A first paddle should help you keep the ball in play. That usually means a forgiving face shape, a comfortable handle, and a balanced feel. The goal is not to buy the hardest-hitting paddle on the shelf; it is to make serves, returns, dinks, and resets easier to learn.</p>
+          <p>Price can matter, but it is not the whole story. Budget paddles can be useful for casual starts, while mid-range paddles often make sense once you know you will play weekly. Premium paddles are usually better saved until your preferences are clearer.</p>
+        </div>
+      </section>
       <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         <ChecklistSection title="Weight" items={["Lighter can feel easier to maneuver", "Heavier can feel steadier but may be tiring", "Beginners should prioritize comfort"]} />
         <ChecklistSection title="Grip size" items={["A comfortable grip helps control", "Too large can feel awkward", "Overgrip can fine-tune feel"]} />

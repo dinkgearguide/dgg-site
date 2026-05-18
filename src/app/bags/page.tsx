@@ -14,6 +14,13 @@ export default function BagsPage() {
       <Breadcrumbs items={[{ label: "Bags", href: "/bags/" }]} />
       <h1 className="text-4xl font-black text-ink">Best Pickleball Bags</h1>
       <p className="mt-4 max-w-3xl leading-8 text-slate-700">A good beginner bag should make it easier to bring your paddle, balls, water, and small accessories without becoming a bulky chore.</p>
+      <section className="mt-8 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+        <h2 className="text-2xl font-black text-ink">Choose the smallest bag that solves the problem</h2>
+        <div className="mt-4 grid gap-5 leading-8 text-slate-700 md:grid-cols-2">
+          <p>Bag choice depends on how often you play and how much you bring. A sling bag can be perfect for one paddle and a few balls. A backpack starts to make sense when you carry shoes, layers, water, snacks, or gear for more than one person.</p>
+          <p>A beginner bag should be easy to grab and easy to put away. If it is too large or too specialized, it may stay home. Look for practical pockets, comfortable straps, and enough structure to protect your paddle without turning every court trip into packing for travel.</p>
+        </div>
+      </section>
       <div className="mt-8 grid gap-5 md:grid-cols-3">
         <ChecklistSection title="Sling bags" items={["Best for one paddle", "Light and easy to carry", "Limited extra storage"]} />
         <ChecklistSection title="Backpacks" items={["Best for regular players", "More room for layers and water", "Can be more bag than a casual player needs"]} />
