@@ -1,0 +1,27 @@
+{
+  "name": "dink-gear-guide",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.50",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@eslint/eslintrc": "3.3.3",
+    "autoprefixer": "10.4.21",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.2.6",
+    "postcss": "8.5.10",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.8.3"
+  }
+}
