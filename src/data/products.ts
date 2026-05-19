@@ -23,7 +23,12 @@ const imageByCategory: Record<ProductCategory, string> = {
 };
 
 const imageBySlug: Record<string, string> = {
+  "family-pickleball-starter-set": "/images/products/photos/family-starter-set.jpg",
   "backyard-pickleball-starter-kit": "/images/products/photos/backyard-starter-kit.jpg"
+};
+
+const affiliateUrlBySlug: Record<string, string> = {
+  "family-pickleball-starter-set": "https://www.amazon.com/dp/B09C88QVHL?tag=dinkgearguide-20"
 };
 
 const baseFeatures: Record<ProductCategory, string[]> = {
@@ -93,14 +98,15 @@ const featuredProductCopy: Record<string, Partial<Pick<Product, "shortDescriptio
   },
   "family-pickleball-starter-set": {
     shortDescription: "A larger beginner set for families or small groups who want enough gear for rotating casual games.",
-    longDescription: "A family pickleball starter set is useful when the goal is getting several people on court at once. It is a good fit for households, visiting relatives, driveway games, and casual park sessions where shared gear matters more than fine-tuned paddle preferences. The best family sets are easy to organize and replace: enough paddles for the regular group, balls that match the court surface, and a bag or case that keeps everything together between games. Avoid judging these sets only by item count; a smaller set with usable paddles and the right balls can be better than a crowded bundle full of extras.",
-    features: ["Multi-player paddle count", "Group-friendly ball supply", "Shared storage option"],
+    longDescription: "A family pickleball starter set is useful when the goal is getting several people on court at once. This type of set is a good fit for households, visiting relatives, driveway games, and casual park sessions where shared gear matters more than fine-tuned paddle preferences. The linked option is positioned as a multi-paddle bundle with balls, a bag, and grip accessories, but visitors should confirm the selected variation and current included items before buying. Avoid judging these sets only by item count; a smaller set with usable paddles and the right balls can be better than a crowded bundle full of extras.",
+    features: ["Multiple paddle options", "Indoor and outdoor ball support", "Bag and overgrip accessories"],
     pros: ["Useful for households and guests", "Keeps beginner gear in one place", "Good for casual games where people rotate in"],
     cons: ["More items can hide lower-quality basics", "Not every paddle may fit every player", "Can be more gear than a solo beginner needs"],
     buyingTips: [
+      "Confirm whether you are selecting the two-paddle or four-paddle version before buying.",
       "Count how many people will realistically play at the same time before choosing a larger bundle.",
       "Check whether the set includes outdoor balls if most games will be at parks.",
-      "Prioritize usable paddles and storage over novelty accessories."
+      "Prioritize usable paddles, balls, and storage over novelty accessories."
     ]
   },
   "lightweight-control-paddle": {
@@ -175,7 +181,7 @@ export const products: Product[] = items.map(([name, category, bestFor, skillLev
       "Use price tier as a guide, not a live price.",
       "Compare the item against how often and where you expect to play."
     ],
-    affiliateUrl: "#replace-with-affiliate-link",
+    affiliateUrl: affiliateUrlBySlug[slug] ?? "#replace-with-affiliate-link",
     affiliateNetwork: "Amazon Associates",
     image: imageBySlug[slug] ?? imageByCategory[category],
     personallyTested: false,
