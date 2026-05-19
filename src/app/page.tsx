@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata(
   "Dink Gear Guide | Beginner Pickleball Gear Guides",
-  "Beginner-friendly pickleball gear guides for paddles, starter sets, balls, bags, accessories, and gifts.",
+  "Beginner-friendly pickleball gear guides for paddles, starter sets, balls, bags, accessories, and gifts — simple advice without the hype.",
   "/"
 );
 

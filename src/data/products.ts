@@ -12,14 +12,14 @@ const descriptions: Record<ProductCategory, string> = {
 };
 
 const imageByCategory: Record<ProductCategory, string> = {
-  "Starter Sets": "/images/products/placeholder-set.svg",
-  "Beginner Paddles": "/images/products/placeholder-paddle.svg",
-  Balls: "/images/products/placeholder-balls.svg",
-  Bags: "/images/products/placeholder-bag.svg",
-  Nets: "/images/products/placeholder-net.svg",
-  "Grip Tape": "/images/products/placeholder-grip.svg",
-  "Court Accessories": "/images/products/placeholder-accessory.svg",
-  Gifts: "/images/products/placeholder-gift.svg"
+  "Starter Sets": "/images/products/photos/starter-set.jpg",
+  "Beginner Paddles": "/images/products/photos/beginner-paddle.jpg",
+  Balls: "/images/products/photos/balls.jpg",
+  Bags: "/images/products/photos/bag.jpg",
+  Nets: "/images/products/photos/net.jpg",
+  "Grip Tape": "/images/products/photos/grip-tape.jpg",
+  "Court Accessories": "/images/products/photos/accessories.jpg",
+  Gifts: "/images/products/photos/gift.jpg"
 };
 
 const baseFeatures: Record<ProductCategory, string[]> = {

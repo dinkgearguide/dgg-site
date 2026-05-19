@@ -4,12 +4,12 @@ import { AffiliateDisclosureBanner } from "@/components/AffiliateDisclosureBanne
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
-import { websiteJsonLd } from "@/lib/seo";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dinkgearguide.com"),
   title: "Dink Gear Guide",
-  description: "Beginner-friendly pickleball gear without the guesswork."
+  description: "Beginner-friendly pickleball gear guides for paddles, starter sets, balls, bags, accessories, and gifts — simple advice without the hype."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -17,6 +17,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body>
         <JsonLd data={websiteJsonLd()} />
+        <JsonLd data={organizationJsonLd()} />
         <AffiliateDisclosureBanner />
         <Header />
         {children}

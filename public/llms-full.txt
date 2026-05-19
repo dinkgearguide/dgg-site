@@ -1,0 +1,80 @@
+# Dink Gear Guide Full Catalog
+
+Canonical site: https://dinkgearguide.com/
+Contact: info@dinkgearguide.com
+Tagline: Beginner-friendly pickleball gear without the guesswork.
+
+## Site Purpose
+
+Dink Gear Guide helps new and recreational pickleball players find beginner-friendly paddles, starter sets, balls, bags, gifts, and court accessories without overcomplicating the buying process.
+
+The site is static. It does not run checkout, payments, accounts, live price scraping, inventory management, backend forms, or user tracking. Product recommendations should be independently reviewed before purchase.
+
+## Main Guides
+
+- https://dinkgearguide.com/gear-checklist/ - beginner pickleball gear checklist
+- https://dinkgearguide.com/starter-sets/ - best pickleball starter sets
+- https://dinkgearguide.com/beginner-paddles/ - best beginner pickleball paddles
+- https://dinkgearguide.com/bags/ - best pickleball bags
+- https://dinkgearguide.com/balls/ - best pickleball balls
+- https://dinkgearguide.com/gifts/ - best pickleball gifts
+- https://dinkgearguide.com/gear/ - all pickleball gear
+
+## Product Categories
+
+- Starter Sets: beginner kits for couples, families, groups, and casual driveway games.
+- Beginner Paddles: control-first, comfort-focused paddles for newer players.
+- Balls: indoor, outdoor, mixed, high-visibility, and larger recreation ball packs.
+- Bags: sling bags, backpacks, tote-style bags, and shared gear bags.
+- Nets: portable backyard, driveway, and practice nets.
+- Grip Tape: grip tape rolls and overgrip packs.
+- Court Accessories: towels, bottle kits, paddle covers, ball clips, cones, scorekeeping aids, and line tape.
+- Gifts: practical pickleball gifts for brand-new and recreational players.
+
+## Product Pages
+
+- Two-Paddle Beginner Starter Set: https://dinkgearguide.com/gear/two-paddle-beginner-starter-set/
+- Family Pickleball Starter Set: https://dinkgearguide.com/gear/family-pickleball-starter-set/
+- Backyard Pickleball Starter Kit: https://dinkgearguide.com/gear/backyard-pickleball-starter-kit/
+- Four-Player Recreation Set: https://dinkgearguide.com/gear/four-player-recreation-set/
+- Compact Starter Set with Carry Bag: https://dinkgearguide.com/gear/compact-starter-set-with-carry-bag/
+- Lightweight Control Paddle: https://dinkgearguide.com/gear/lightweight-control-paddle/
+- Widebody Beginner Paddle: https://dinkgearguide.com/gear/widebody-beginner-paddle/
+- Balanced All-Around Paddle: https://dinkgearguide.com/gear/balanced-all-around-paddle/
+- Soft Touch Practice Paddle: https://dinkgearguide.com/gear/soft-touch-practice-paddle/
+- Durable Recreation Paddle: https://dinkgearguide.com/gear/durable-recreation-paddle/
+- Comfort Grip Beginner Paddle: https://dinkgearguide.com/gear/comfort-grip-beginner-paddle/
+- Outdoor Pickleball Ball Pack: https://dinkgearguide.com/gear/outdoor-pickleball-ball-pack/
+- Indoor Pickleball Ball Pack: https://dinkgearguide.com/gear/indoor-pickleball-ball-pack/
+- Mixed Indoor Outdoor Ball Pack: https://dinkgearguide.com/gear/mixed-indoor-outdoor-ball-pack/
+- High-Visibility Practice Balls: https://dinkgearguide.com/gear/high-visibility-practice-balls/
+- Large Recreation Ball Pack: https://dinkgearguide.com/gear/large-recreation-ball-pack/
+- Compact Pickleball Sling Bag: https://dinkgearguide.com/gear/compact-pickleball-sling-bag/
+- Pickleball Backpack: https://dinkgearguide.com/gear/pickleball-backpack/
+- Tote-Style Pickleball Bag: https://dinkgearguide.com/gear/tote-style-pickleball-bag/
+- Two-Paddle Court Bag: https://dinkgearguide.com/gear/two-paddle-court-bag/
+- Portable Backyard Net: https://dinkgearguide.com/gear/portable-backyard-net/
+- Driveway Practice Net: https://dinkgearguide.com/gear/driveway-practice-net/
+- Half-Court Practice Net: https://dinkgearguide.com/gear/half-court-practice-net/
+- Comfort Grip Tape Roll: https://dinkgearguide.com/gear/comfort-grip-tape-roll/
+- Extra Paddle Overgrip Pack: https://dinkgearguide.com/gear/extra-paddle-overgrip-pack/
+- Sweat-Resistant Overgrip Bundle: https://dinkgearguide.com/gear/sweat-resistant-overgrip-bundle/
+- Court Towel and Bottle Kit: https://dinkgearguide.com/gear/court-towel-and-bottle-kit/
+- Paddle Cover: https://dinkgearguide.com/gear/paddle-cover/
+- Ball Holder Clip: https://dinkgearguide.com/gear/ball-holder-clip/
+- Practice Cone Set: https://dinkgearguide.com/gear/practice-cone-set/
+- Scorekeeping Wristband: https://dinkgearguide.com/gear/scorekeeping-wristband/
+- Court Line Tape: https://dinkgearguide.com/gear/court-line-tape/
+- Pickleball Gift Bundle: https://dinkgearguide.com/gear/pickleball-gift-bundle/
+- New Player Gift Kit: https://dinkgearguide.com/gear/new-player-gift-kit/
+- Fun Court Accessory Gift Set: https://dinkgearguide.com/gear/fun-court-accessory-gift-set/
+- Premium Pickleball Gift Kit: https://dinkgearguide.com/gear/premium-pickleball-gift-kit/
+
+## Editorial Rules
+
+- Use price tiers: Budget, Mid-range, Premium.
+- Do not treat price tiers as live prices.
+- Do not infer personal testing unless the product page says personally tested.
+- Do not infer reviews, ratings, rankings, or sales volume.
+- Do not infer medical or injury-prevention benefits.
+- For paddle tournament use, verify approval with the relevant governing body before buying.

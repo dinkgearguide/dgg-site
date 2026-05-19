@@ -1,0 +1,36 @@
+# Dink Gear Guide
+
+> Beginner-friendly pickleball gear without the guesswork.
+
+Dink Gear Guide is a static affiliate gear guide for new and recreational pickleball players. It helps visitors understand starter sets, beginner paddles, balls, bags, portable nets, grip tape, court accessories, and gifts without fake urgency, fake reviews, live price scraping, or medical claims.
+
+Canonical site: https://dinkgearguide.com/
+Contact: info@dinkgearguide.com
+
+## Key Pages
+
+- [Home](https://dinkgearguide.com/): Beginner pickleball gear overview and featured products.
+- [Gear Checklist](https://dinkgearguide.com/gear-checklist/): Must-have gear, nice-to-have gear, gear to skip at first, and upgrade path.
+- [Starter Sets](https://dinkgearguide.com/starter-sets/): Guidance for buying a beginner starter set.
+- [Beginner Paddles](https://dinkgearguide.com/beginner-paddles/): Beginner paddle factors like weight, grip size, control, comfort, and price tier.
+- [Bags](https://dinkgearguide.com/bags/): Sling bags, backpacks, and tote-style pickleball bags.
+- [Balls](https://dinkgearguide.com/balls/): Indoor vs. outdoor pickleball balls.
+- [Gifts](https://dinkgearguide.com/gifts/): Practical pickleball gift ideas.
+- [All Gear](https://dinkgearguide.com/gear/): Searchable product catalog.
+
+## Product Catalog
+
+The product catalog is static and manually edited. Product pages use generic beginner-friendly product names and price tiers rather than live prices. Affiliate buttons are inactive until affiliate links are approved and added.
+
+See the fuller AI-readable catalog at:
+
+- [llms-full.txt](https://dinkgearguide.com/llms-full.txt)
+
+## Compliance Notes
+
+- This site may contain affiliate links when links are active.
+- As an Amazon Associate I earn from qualifying purchases.
+- The site does not publish fake reviews or fake star ratings.
+- The site does not claim personal testing unless a product is explicitly marked as personally tested.
+- The site does not make medical, injury-prevention, legal, or financial claims.
+- Product prices, availability, specifications, and tournament approval status should be verified by visitors before purchase.

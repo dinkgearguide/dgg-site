@@ -6,7 +6,7 @@ import { AffiliateButton } from "@/components/AffiliateButton";
 export function ProductCard({ product }: { product: Product }) {
   return (
     <article className="flex h-full flex-col rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-      <Image src={product.image} alt="" width={520} height={320} className="mb-4 aspect-[13/8] w-full rounded-md bg-slate-50 object-cover" />
+      <Image src={product.image} alt={`${product.name} product photo`} width={520} height={320} className="mb-4 aspect-[13/8] w-full rounded-md bg-slate-50 object-cover" />
       <div className="flex flex-wrap gap-2 text-xs font-bold">
         <span className="rounded-full bg-emerald-50 px-3 py-1 text-court">{product.category}</span>
         <span className="rounded-full bg-blue-50 px-3 py-1 text-paddle">{product.priceTier}</span>

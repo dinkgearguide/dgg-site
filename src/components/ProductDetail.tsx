@@ -6,7 +6,7 @@ import { RelatedProducts } from "@/components/RelatedProducts";
 export function ProductDetail({ product }: { product: Product }) {
   return (
     <article className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-      <Image src={product.image} alt="" width={720} height={460} className="aspect-[13/8] w-full rounded-lg border border-slate-200 bg-white object-cover shadow-sm" priority />
+      <Image src={product.image} alt={`${product.name} product photo`} width={720} height={460} className="aspect-[13/8] w-full rounded-lg border border-slate-200 bg-white object-cover shadow-sm" priority />
       <div>
         <p className="text-sm font-bold uppercase tracking-widest text-court">{product.category}</p>
         <h1 className="mt-3 text-4xl font-black leading-tight text-ink">{product.name}</h1>
