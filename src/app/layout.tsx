@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AffiliateDisclosureBanner } from "@/components/AffiliateDisclosureBanner";
+import { CloudflareAnalytics } from "@/components/CloudflareAnalytics";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
         {children}
         <Footer />
+        <CloudflareAnalytics />
       </body>
     </html>
   );
