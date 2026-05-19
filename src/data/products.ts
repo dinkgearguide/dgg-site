@@ -74,23 +74,99 @@ const items: Array<[string, ProductCategory, string, SkillLevel, PriceTier, bool
 
 const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
+const featuredProductCopy: Record<string, Partial<Pick<Product, "shortDescription" | "longDescription" | "features" | "pros" | "cons" | "buyingTips">>> = {
+  "two-paddle-beginner-starter-set": {
+    shortDescription: "A practical starter option for two brand-new players who need paddles and balls without buying each item separately.",
+    longDescription: "A two-paddle beginner starter set makes the most sense when two people want to try pickleball together and do not already own court gear. The value is convenience: one purchase can cover two paddles, a few balls, and sometimes a basic storage case. New players should treat this kind of set as a simple entry point, not as a final paddle decision. Check the current set contents carefully, especially the number of balls, whether they are indoor or outdoor balls, and whether the paddle grips sound comfortable for both players.",
+    features: ["Two-player setup", "Basic ball supply", "Easy shared storage"],
+    pros: ["Simple way for two people to start", "Usually easier than buying every item separately", "Good fit for casual first games and guest gear"],
+    cons: ["Starter paddles may be outgrown by regular players", "Included balls may not match every court type", "Grip size and paddle weight should still be checked"],
+    buyingTips: [
+      "Confirm whether the included balls are indoor, outdoor, or mixed before buying.",
+      "Look for a return policy in case the paddle weight or grip feel is not comfortable.",
+      "If one player already plays weekly, consider one better personal paddle instead of a shared starter set."
+    ]
+  },
+  "family-pickleball-starter-set": {
+    shortDescription: "A larger beginner set for families or small groups who want enough gear for rotating casual games.",
+    longDescription: "A family pickleball starter set is useful when the goal is getting several people on court at once. It is a good fit for households, visiting relatives, driveway games, and casual park sessions where shared gear matters more than fine-tuned paddle preferences. The best family sets are easy to organize and replace: enough paddles for the regular group, balls that match the court surface, and a bag or case that keeps everything together between games. Avoid judging these sets only by item count; a smaller set with usable paddles and the right balls can be better than a crowded bundle full of extras.",
+    features: ["Multi-player paddle count", "Group-friendly ball supply", "Shared storage option"],
+    pros: ["Useful for households and guests", "Keeps beginner gear in one place", "Good for casual games where people rotate in"],
+    cons: ["More items can hide lower-quality basics", "Not every paddle may fit every player", "Can be more gear than a solo beginner needs"],
+    buyingTips: [
+      "Count how many people will realistically play at the same time before choosing a larger bundle.",
+      "Check whether the set includes outdoor balls if most games will be at parks.",
+      "Prioritize usable paddles and storage over novelty accessories."
+    ]
+  },
+  "lightweight-control-paddle": {
+    shortDescription: "A first personal paddle for beginners who want easy handling and control before extra power.",
+    longDescription: "A lightweight control paddle is a sensible first personal paddle for players who are moving beyond shared starter gear. New players often benefit from a paddle that feels easy to move during serves, returns, volleys, and dink exchanges. The point is not to maximize power right away; it is to make consistent contact and learn touch shots without fighting the paddle. Before buying, check the listed weight range, grip circumference, return policy, and any tournament approval details if sanctioned play may be in your future.",
+    features: ["Easy maneuvering", "Control-focused feel", "Comfortable first-paddle profile"],
+    pros: ["Good fit for learning placement and soft shots", "Less intimidating than power-focused paddles", "Useful upgrade from many shared starter paddles"],
+    cons: ["May not satisfy players who already prefer heavy power paddles", "Still requires checking grip size", "Tournament approval should be verified separately"],
+    buyingTips: [
+      "Choose comfort and control over maximum power for a first personal paddle.",
+      "Verify the paddle weight and grip size against your preferences before buying.",
+      "If you plan to play sanctioned tournaments, confirm approval with the relevant governing body."
+    ]
+  },
+  "widebody-beginner-paddle": {
+    shortDescription: "A forgiving paddle shape for beginners who want a larger contact area and fewer mishits.",
+    longDescription: "A widebody beginner paddle is aimed at players who want forgiveness while learning timing and contact. The wider face can feel more approachable for serves, returns, blocks, and kitchen-line exchanges because it gives newer players a little more room to make clean contact. This style is especially useful when consistency matters more than spin, reach, or advanced power. Check the paddle dimensions, weight, edge guard, and grip information rather than assuming every widebody paddle will feel the same.",
+    features: ["Forgiving face shape", "Beginner-friendly contact area", "Simple control profile"],
+    pros: ["Helpful for players still building consistent contact", "Good fit for recreational games and clinics", "Often easier to understand than specialized paddle shapes"],
+    cons: ["May offer less reach than elongated paddles", "Can still feel awkward if the grip is wrong", "Advanced players may want more specialized performance"],
+    buyingTips: [
+      "Look for a comfortable weight range before focusing on surface technology.",
+      "Choose this style if clean contact is a bigger priority than extra reach.",
+      "Verify tournament approval separately if you plan to enter sanctioned events."
+    ]
+  },
+  "balanced-all-around-paddle": {
+    shortDescription: "A middle-ground paddle option for beginners who want one paddle for casual games, lessons, and weekly play.",
+    longDescription: "A balanced all-around paddle is the safe middle lane for newer players who are not sure what style they prefer yet. It should feel stable enough for returns and blocks while still being manageable for kitchen play and quick exchanges. This type of paddle is best for players who expect to play more than once or twice and want one personal paddle that can cover most beginner situations. Before buying, compare weight, grip size, durability notes, return policy, and approval status instead of relying on broad marketing claims.",
+    features: ["Versatile first-paddle setup", "Balanced handling", "Beginner-to-recreational fit"],
+    pros: ["Good choice when preferences are still developing", "Works for casual games, lessons, and practice", "Less specialized than power-only or control-only options"],
+    cons: ["May not excel at one specific advanced style", "Can cost more than a basic shared paddle", "Specs still need to be checked against current retailer details"],
+    buyingTips: [
+      "Pick this style if you want one personal paddle before you know your exact preferences.",
+      "Compare warranty and return terms because paddle feel is personal.",
+      "Verify tournament approval if sanctioned play is part of your plan."
+    ]
+  },
+  "outdoor-pickleball-ball-pack": {
+    shortDescription: "A useful ball pack for park courts, outdoor rec play, and beginners who need reliable spares.",
+    longDescription: "An outdoor pickleball ball pack is one of the most practical purchases for new players who mostly play at parks, school courts, driveways, or dedicated outdoor courts. Outdoor balls are usually built to handle rougher surfaces and wind better than indoor balls, so they can feel firmer and bounce differently. Beginners should keep extra balls on hand because balls crack, roll away, and disappear during group play. Check that the pack is intended for outdoor use, that the color is easy to see on your local courts, and that the quantity fits how often your group plays.",
+    features: ["Outdoor court design", "High-visibility options", "Spare balls for group play"],
+    pros: ["Practical for parks and outdoor courts", "Easy beginner add-on purchase", "Helpful when balls crack or get lost"],
+    cons: ["Can feel firmer than indoor balls", "Not ideal for all gym floors", "Color visibility depends on court surface and lighting"],
+    buyingTips: [
+      "Buy outdoor balls first if most of your games are at parks or dedicated outdoor courts.",
+      "Choose a visible color that stands out against your local court surface.",
+      "Keep a few spares in your bag because outdoor balls wear out and crack over time."
+    ]
+  }
+};
+
 export const products: Product[] = items.map(([name, category, bestFor, skillLevel, priceTier, featured], index) => {
   const id = `p${String(index + 1).padStart(2, "0")}`;
   const slug = slugify(name);
+  const overrides = featuredProductCopy[slug] ?? {};
   return {
     id,
     slug,
     name,
     category,
-    shortDescription: descriptions[category],
-    longDescription: `${name} is a straightforward ${category.toLowerCase()} pick for newer pickleball players who want useful gear without sorting through overly technical specs. It is positioned for ${bestFor.toLowerCase()} and should be checked against current retailer details before purchase.`,
+    shortDescription: overrides.shortDescription ?? descriptions[category],
+    longDescription: overrides.longDescription ?? `${name} is a straightforward ${category.toLowerCase()} pick for newer pickleball players who want useful gear without sorting through overly technical specs. It is positioned for ${bestFor.toLowerCase()} and should be checked against current retailer details before purchase.`,
     bestFor,
     skillLevel,
     priceTier,
-    features: baseFeatures[category],
-    pros: ["Easy for beginners to understand", "Practical for recreational play", "No unnecessary advanced extras"],
-    cons: ["Not a substitute for checking current specs", "May not suit advanced competitive preferences"],
-    buyingTips: [
+    features: overrides.features ?? baseFeatures[category],
+    pros: overrides.pros ?? ["Easy for beginners to understand", "Practical for recreational play", "No unnecessary advanced extras"],
+    cons: overrides.cons ?? ["Not a substitute for checking current specs", "May not suit advanced competitive preferences"],
+    buyingTips: overrides.buyingTips ?? [
       "Confirm the current contents, size, and return policy before buying.",
       "Use price tier as a guide, not a live price.",
       "Compare the item against how often and where you expect to play."

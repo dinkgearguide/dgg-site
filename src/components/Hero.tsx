@@ -1,6 +1,13 @@
 import Link from "next/link";
 
 export function Hero() {
+  const heroLinks = [
+    { label: "Paddles", href: "/beginner-paddles/" },
+    { label: "Balls", href: "/balls/" },
+    { label: "Bags", href: "/bags/" },
+    { label: "Starter sets", href: "/starter-sets/" }
+  ];
+
   return (
     <section className="relative min-h-[620px] overflow-hidden bg-slate-950 md:min-h-[680px]">
       <div
@@ -24,10 +31,14 @@ export function Hero() {
             </Link>
           </div>
           <div className="mt-8 grid max-w-2xl gap-3 text-sm font-bold text-white sm:grid-cols-4">
-            {["Paddles", "Balls", "Bags", "Starter sets"].map((item) => (
-              <div key={item} className="rounded-md border border-white/25 bg-slate-950/35 px-4 py-3 backdrop-blur">
-                {item}
-              </div>
+            {heroLinks.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-md border border-white/25 bg-slate-950/35 px-4 py-3 backdrop-blur transition hover:border-emerald-200 hover:bg-white/15 focus:outline-none focus:ring-4 focus:ring-emerald-200"
+              >
+                {item.label}
+              </Link>
             ))}
           </div>
         </div>
