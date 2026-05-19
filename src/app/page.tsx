@@ -1,5 +1,4 @@
 import { CategoryCard } from "@/components/CategoryCard";
-import { EmailSignup } from "@/components/EmailSignup";
 import { Hero } from "@/components/Hero";
 import { IconBadge, type IconName } from "@/components/IconBadge";
 import { ProductGrid } from "@/components/ProductGrid";
@@ -57,7 +56,6 @@ export default function Home() {
       <Section title="Gear You Can Skip at First">
         <p className="max-w-3xl leading-8 text-slate-700">Most beginners do not need advanced training gadgets, expensive tournament bags, multiple premium paddles, or specialized shoes before they know how often they will play. Start useful, then upgrade after real court time.</p>
       </Section>
-      <section className="mx-auto max-w-6xl px-4 py-10"><EmailSignup /></section>
       <section className="mx-auto max-w-6xl px-4 py-6">
         <p className="rounded-lg border border-emerald-100 bg-emerald-50 p-4 text-sm text-emerald-950">Affiliate reminder: This site may earn from qualifying purchases. Recommendations are informational and should be independently reviewed before purchase.</p>
       </section>

@@ -22,6 +22,10 @@ const imageByCategory: Record<ProductCategory, string> = {
   Gifts: "/images/products/photos/gift.jpg"
 };
 
+const imageBySlug: Record<string, string> = {
+  "backyard-pickleball-starter-kit": "/images/products/photos/backyard-starter-kit.jpg"
+};
+
 const baseFeatures: Record<ProductCategory, string[]> = {
   "Starter Sets": ["Multiple paddles", "Beginner ball pack", "Simple shared setup"],
   "Beginner Paddles": ["Forgiving shape", "Comfort-focused handle", "Control-first feel"],
@@ -173,7 +177,7 @@ export const products: Product[] = items.map(([name, category, bestFor, skillLev
     ],
     affiliateUrl: "#replace-with-affiliate-link",
     affiliateNetwork: "Amazon Associates",
-    image: imageByCategory[category],
+    image: imageBySlug[slug] ?? imageByCategory[category],
     personallyTested: false,
     featured,
     relatedProductIds: []
