@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Product } from "@/types/product";
 import { AffiliateButton } from "@/components/AffiliateButton";
+import { DecisionFrameworkCallout } from "@/components/DecisionFrameworkCallout";
 import { RelatedProducts } from "@/components/RelatedProducts";
 
 export function ProductDetail({ product }: { product: Product }) {
@@ -16,6 +17,9 @@ export function ProductDetail({ product }: { product: Product }) {
           <Badge label="Price tier" value={product.priceTier} />
         </dl>
         <p className="mt-6 leading-8 text-slate-700">{product.longDescription}</p>
+        <div className="mt-6">
+          <DecisionFrameworkCallout />
+        </div>
         <div className="mt-6 rounded-lg border border-emerald-100 bg-emerald-50 p-4 text-sm text-emerald-950">
           Disclosure: Product links may be affiliate links when active. If you buy through an affiliate link, I may earn a commission at no extra cost to you.
         </div>

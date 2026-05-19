@@ -3,6 +3,7 @@ import Link from "next/link";
 const links = [
   ["About", "/about/"],
   ["Contact", "/contact/"],
+  ["Gear Framework", "/gear-decision-framework/"],
   ["Affiliate Disclosure", "/affiliate-disclosure/"],
   ["Privacy Policy", "/privacy-policy/"],
   ["Terms of Use", "/terms/"]

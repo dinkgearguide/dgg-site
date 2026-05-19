@@ -1,4 +1,5 @@
 import { CategoryCard } from "@/components/CategoryCard";
+import { DecisionFrameworkCallout } from "@/components/DecisionFrameworkCallout";
 import { Hero } from "@/components/Hero";
 import { IconBadge, type IconName } from "@/components/IconBadge";
 import { ProductGrid } from "@/components/ProductGrid";
@@ -49,6 +50,9 @@ export default function Home() {
             </div>
           ))}
         </div>
+      </Section>
+      <Section title="How We Choose Gear">
+        <DecisionFrameworkCallout />
       </Section>
       <Section title="Featured Products">
         <ProductGrid products={products.filter((product) => product.featured).slice(0, 6)} />

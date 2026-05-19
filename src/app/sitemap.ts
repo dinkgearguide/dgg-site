@@ -14,6 +14,7 @@ const staticPages = [
   "/balls/",
   "/gifts/",
   "/gear/",
+  "/gear-decision-framework/",
   "/about/",
   "/contact/",
   "/affiliate-disclosure/",

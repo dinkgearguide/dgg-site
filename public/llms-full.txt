@@ -13,6 +13,7 @@ The site is static. It does not run checkout, payments, accounts, live price scr
 ## Main Guides
 
 - https://dinkgearguide.com/gear-checklist/ - beginner pickleball gear checklist
+- https://dinkgearguide.com/gear-decision-framework/ - beginner pickleball gear decision framework
 - https://dinkgearguide.com/starter-sets/ - best pickleball starter sets
 - https://dinkgearguide.com/beginner-paddles/ - best beginner pickleball paddles
 - https://dinkgearguide.com/bags/ - best pickleball bags
@@ -72,6 +73,7 @@ The site is static. It does not run checkout, payments, accounts, live price scr
 
 ## Editorial Rules
 
+- Recommendations use a beginner-first decision framework: first-month fit, comfort before hype, court match, reasonable price tier, and upgrade timing.
 - Use price tiers: Budget, Mid-range, Premium.
 - Do not treat price tiers as live prices.
 - Do not infer personal testing unless the product page says personally tested.
