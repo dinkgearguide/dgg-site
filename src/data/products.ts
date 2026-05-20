@@ -25,13 +25,20 @@ const imageByCategory: Record<ProductCategory, string> = {
 const imageBySlug: Record<string, string> = {
   "two-paddle-beginner-starter-set": "/images/products/photos/two-paddle-starter-set.jpg",
   "family-pickleball-starter-set": "/images/products/photos/family-starter-set.jpg",
-  "backyard-pickleball-starter-kit": "/images/products/photos/backyard-starter-kit.jpg"
+  "backyard-pickleball-starter-kit": "/images/products/photos/backyard-starter-kit.jpg",
+  "lightweight-control-paddle": "/images/products/photos/lightweight-control-paddle-graphite.jpg",
+  "widebody-beginner-paddle": "/images/products/photos/widebody-beginner-paddle.jpg",
+  "balanced-all-around-paddle": "/images/products/photos/lightweight-control-paddle.jpg"
 };
 
 const affiliateUrlBySlug: Record<string, string> = {
   "two-paddle-beginner-starter-set": "https://www.amazon.com/dp/B0CNS9TDLC?tag=dinkgearguide-20",
   "family-pickleball-starter-set": "https://www.amazon.com/dp/B09C88QVHL?tag=dinkgearguide-20",
-  "backyard-pickleball-starter-kit": "https://amzn.to/3Pxq4oU"
+  "backyard-pickleball-starter-kit": "https://amzn.to/3Pxq4oU",
+  "lightweight-control-paddle": "https://www.amazon.com/dp/B0D9PNTG78?tag=dinkgearguide-20",
+  "widebody-beginner-paddle": "https://www.amazon.com/dp/B08XC88SYG?tag=dinkgearguide-20",
+  "balanced-all-around-paddle": "https://www.amazon.com/dp/B0GHBWVD31?tag=dinkgearguide-20",
+  "outdoor-pickleball-ball-pack": "https://www.amazon.com/dp/B0CQBYTXRK?tag=dinkgearguide-20"
 };
 
 const baseFeatures: Record<ProductCategory, string[]> = {
@@ -128,49 +135,50 @@ const featuredProductCopy: Record<string, Partial<Pick<Product, "shortDescriptio
   },
   "lightweight-control-paddle": {
     shortDescription: "A first personal paddle for beginners who want easy handling and control before extra power.",
-    longDescription: "A lightweight control paddle is a sensible first personal paddle for players who are moving beyond shared starter gear. New players often benefit from a paddle that feels easy to move during serves, returns, volleys, and dink exchanges. The point is not to maximize power right away; it is to make consistent contact and learn touch shots without fighting the paddle. Before buying, check the listed weight range, grip circumference, return policy, and any tournament approval details if sanctioned play may be in your future.",
-    features: ["Easy maneuvering", "Control-focused feel", "Comfortable first-paddle profile"],
-    pros: ["Good fit for learning placement and soft shots", "Less intimidating than power-focused paddles", "Useful upgrade from many shared starter paddles"],
-    cons: ["May not satisfy players who already prefer heavy power paddles", "Still requires checking grip size", "Tournament approval should be verified separately"],
+    longDescription: "A lightweight control paddle is a sensible first personal paddle for players who are moving beyond shared starter gear. The linked option is positioned as a light graphite-faced paddle with a polymer honeycomb core and comfort-focused grip. Those details make it a reasonable fit for developing players who want maneuverability, placement, and consistent contact before chasing a heavier power paddle. Before buying, check the current weight range, grip size, dimensions, return policy, and approval status rather than relying on broad performance claims.",
+    features: ["Graphite paddle face", "Lightweight handling", "Comfort-focused grip"],
+    pros: ["Good fit for learning placement and soft shots", "Useful upgrade from many shared starter paddles", "Single-paddle option for players who want maneuverability"],
+    cons: ["May not satisfy players who already prefer heavy power paddles", "Spin and control claims should be judged against your own play style", "Tournament approval should be verified separately"],
     buyingTips: [
       "Choose comfort and control over maximum power for a first personal paddle.",
-      "Verify the paddle weight and grip size against your preferences before buying.",
-      "If you plan to play sanctioned tournaments, confirm approval with the relevant governing body."
+      "Confirm the listed weight range, grip circumference, and paddle dimensions on the retailer page.",
+      "If you plan to play sanctioned tournaments, verify approval with the relevant governing body before buying."
     ]
   },
   "widebody-beginner-paddle": {
     shortDescription: "A forgiving paddle shape for beginners who want a larger contact area and fewer mishits.",
-    longDescription: "A widebody beginner paddle is aimed at players who want forgiveness while learning timing and contact. The wider face can feel more approachable for serves, returns, blocks, and kitchen-line exchanges because it gives newer players a little more room to make clean contact. This style is especially useful when consistency matters more than spin, reach, or advanced power. Check the paddle dimensions, weight, edge guard, and grip information rather than assuming every widebody paddle will feel the same.",
-    features: ["Forgiving face shape", "Beginner-friendly contact area", "Simple control profile"],
-    pros: ["Helpful for players still building consistent contact", "Good fit for recreational games and clinics", "Often easier to understand than specialized paddle shapes"],
-    cons: ["May offer less reach than elongated paddles", "Can still feel awkward if the grip is wrong", "Advanced players may want more specialized performance"],
+    longDescription: "A widebody beginner paddle is aimed at players who want forgiveness while learning timing and contact. The linked option is positioned as a graphite composite paddle with a polypropylene honeycomb core and comfort-focused grip. For newer players, the appeal is a broad, approachable paddle face that can make serves, returns, blocks, and kitchen-line exchanges feel less demanding while preferences are still developing. Check the current dimensions, weight, grip size, return policy, and approval status rather than assuming every widebody paddle will feel the same.",
+    features: ["Wider paddle face", "Graphite composite surface", "Comfort-focused grip"],
+    pros: ["Helpful for players still building consistent contact", "Good fit for recreational games and clinics", "Budget-friendly way to try a wider shape"],
+    cons: ["May offer less reach than elongated paddles", "Can still feel awkward if the grip is wrong", "Tournament approval should be verified separately"],
     buyingTips: [
-      "Look for a comfortable weight range before focusing on surface technology.",
+      "Confirm the listed paddle width, weight, and grip circumference before buying.",
       "Choose this style if clean contact is a bigger priority than extra reach.",
-      "Verify tournament approval separately if you plan to enter sanctioned events."
+      "If you plan to play sanctioned tournaments, verify approval with the relevant governing body before buying."
     ]
   },
   "balanced-all-around-paddle": {
     shortDescription: "A middle-ground paddle option for beginners who want one paddle for casual games, lessons, and weekly play.",
-    longDescription: "A balanced all-around paddle is the safe middle lane for newer players who are not sure what style they prefer yet. It should feel stable enough for returns and blocks while still being manageable for kitchen play and quick exchanges. This type of paddle is best for players who expect to play more than once or twice and want one personal paddle that can cover most beginner situations. Before buying, compare weight, grip size, durability notes, return policy, and approval status instead of relying on broad marketing claims.",
-    features: ["Versatile first-paddle setup", "Balanced handling", "Beginner-to-recreational fit"],
-    pros: ["Good choice when preferences are still developing", "Works for casual games, lessons, and practice", "Less specialized than power-only or control-only options"],
-    cons: ["May not excel at one specific advanced style", "Can cost more than a basic shared paddle", "Specs still need to be checked against current retailer details"],
+    longDescription: "A balanced all-around paddle is the safe middle lane for newer players who are not sure what style they prefer yet. The linked option is positioned as a beginner-oriented paddle with a fiberglass face, a polypropylene honeycomb core, and a tapered shape. Those details make it a reasonable fit for players who want one personal paddle for casual games, lessons, and weekly play without committing to a highly specialized power or control paddle. Before buying, compare the current weight, grip size, dimensions, return policy, and approval status instead of relying on broad marketing claims.",
+    features: ["Fiberglass paddle face", "Balanced control and pop", "Beginner-to-recreational fit"],
+    pros: ["Good choice when preferences are still developing", "Works for casual games, lessons, and practice", "Single-paddle option for players building their own kit"],
+    cons: ["May not excel at one specific advanced style", "Grip size and paddle shape should still be checked", "Tournament approval should be verified separately"],
     buyingTips: [
       "Pick this style if you want one personal paddle before you know your exact preferences.",
-      "Compare warranty and return terms because paddle feel is personal.",
-      "Verify tournament approval if sanctioned play is part of your plan."
+      "Confirm the listed weight, grip circumference, and paddle dimensions on the retailer page.",
+      "If you plan to play sanctioned tournaments, verify approval with the relevant governing body before buying."
     ]
   },
   "outdoor-pickleball-ball-pack": {
     shortDescription: "A useful ball pack for park courts, outdoor rec play, and beginners who need reliable spares.",
-    longDescription: "An outdoor pickleball ball pack is one of the most practical purchases for new players who mostly play at parks, school courts, driveways, or dedicated outdoor courts. Outdoor balls are usually built to handle rougher surfaces and wind better than indoor balls, so they can feel firmer and bounce differently. Beginners should keep extra balls on hand because balls crack, roll away, and disappear during group play. Check that the pack is intended for outdoor use, that the color is easy to see on your local courts, and that the quantity fits how often your group plays.",
-    features: ["Outdoor court design", "High-visibility options", "Spare balls for group play"],
-    pros: ["Practical for parks and outdoor courts", "Easy beginner add-on purchase", "Helpful when balls crack or get lost"],
+    longDescription: "An outdoor pickleball ball pack is one of the most practical purchases for new players who mostly play at parks, school courts, driveways, or dedicated outdoor courts. The linked option is positioned as a 20-pack of colorful outdoor balls with a drawstring mesh bag, which makes it useful for groups, clinics, and beginners who want spares in one place. Outdoor balls are typically firmer than indoor balls and use smaller, more numerous holes to handle wind and rougher surfaces. Check the current quantity, color mix, ball type, and bag inclusion before buying.",
+    features: ["Outdoor 40-hole design", "High-visibility color mix", "Mesh storage bag"],
+    pros: ["Practical for parks and outdoor courts", "Large pack is useful for groups and practice", "Storage bag helps keep balls together"],
     cons: ["Can feel firmer than indoor balls", "Not ideal for all gym floors", "Color visibility depends on court surface and lighting"],
     buyingTips: [
       "Buy outdoor balls first if most of your games are at parks or dedicated outdoor courts.",
-      "Choose a visible color that stands out against your local court surface.",
+      "Confirm the current listing includes the expected quantity and drawstring mesh bag.",
+      "Choose colors that stand out against your local court surface.",
       "Keep a few spares in your bag because outdoor balls wear out and crack over time."
     ]
   }
