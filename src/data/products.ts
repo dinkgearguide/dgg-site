@@ -23,11 +23,13 @@ const imageByCategory: Record<ProductCategory, string> = {
 };
 
 const imageBySlug: Record<string, string> = {
+  "two-paddle-beginner-starter-set": "/images/products/photos/two-paddle-starter-set.jpg",
   "family-pickleball-starter-set": "/images/products/photos/family-starter-set.jpg",
   "backyard-pickleball-starter-kit": "/images/products/photos/backyard-starter-kit.jpg"
 };
 
 const affiliateUrlBySlug: Record<string, string> = {
+  "two-paddle-beginner-starter-set": "https://www.amazon.com/dp/B0CNS9TDLC?tag=dinkgearguide-20",
   "family-pickleball-starter-set": "https://www.amazon.com/dp/B09C88QVHL?tag=dinkgearguide-20",
   "backyard-pickleball-starter-kit": "https://amzn.to/3Pxq4oU"
 };
@@ -87,13 +89,14 @@ const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-")
 const featuredProductCopy: Record<string, Partial<Pick<Product, "shortDescription" | "longDescription" | "features" | "pros" | "cons" | "buyingTips">>> = {
   "two-paddle-beginner-starter-set": {
     shortDescription: "A practical starter option for two brand-new players who need paddles and balls without buying each item separately.",
-    longDescription: "A two-paddle beginner starter set makes the most sense when two people want to try pickleball together and do not already own court gear. The value is convenience: one purchase can cover two paddles, a few balls, and sometimes a basic storage case. New players should treat this kind of set as a simple entry point, not as a final paddle decision. Check the current set contents carefully, especially the number of balls, whether they are indoor or outdoor balls, and whether the paddle grips sound comfortable for both players.",
-    features: ["Two-player setup", "Basic ball supply", "Easy shared storage"],
-    pros: ["Simple way for two people to start", "Usually easier than buying every item separately", "Good fit for casual first games and guest gear"],
-    cons: ["Starter paddles may be outgrown by regular players", "Included balls may not match every court type", "Grip size and paddle weight should still be checked"],
+    longDescription: "A two-paddle beginner starter set makes the most sense when two people want to try pickleball together and do not already own court gear. The linked option is presented as a bundle with two paddles, indoor balls, outdoor balls, and a carry case, which makes it useful for couples, friends, guests, and casual first games. New players should treat this kind of set as a simple entry point, not as a final paddle decision. Check the current set contents carefully, especially the number and type of balls, the listed paddle weight, the grip dimensions, and whether the selected variation still includes the case.",
+    features: ["Two-paddle setup", "Indoor and outdoor balls", "Carry case with ball storage"],
+    pros: ["Simple way for two people to start", "Useful mix of indoor and outdoor balls", "Good fit for casual first games and guest gear"],
+    cons: ["Regular players may eventually want personal paddles", "Grip size and paddle weight should still be checked", "Tournament approval should be verified before sanctioned play"],
     buyingTips: [
-      "Confirm whether the included balls are indoor, outdoor, or mixed before buying.",
+      "Confirm the current listing still includes two paddles, indoor balls, outdoor balls, and a carry case.",
       "Look for a return policy in case the paddle weight or grip feel is not comfortable.",
+      "If sanctioned tournaments matter to you, verify paddle approval with the relevant governing body before buying.",
       "If one player already plays weekly, consider one better personal paddle instead of a shared starter set."
     ]
   },
