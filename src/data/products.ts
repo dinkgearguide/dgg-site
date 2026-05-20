@@ -28,7 +28,8 @@ const imageBySlug: Record<string, string> = {
 };
 
 const affiliateUrlBySlug: Record<string, string> = {
-  "family-pickleball-starter-set": "https://www.amazon.com/dp/B09C88QVHL?tag=dinkgearguide-20"
+  "family-pickleball-starter-set": "https://www.amazon.com/dp/B09C88QVHL?tag=dinkgearguide-20",
+  "backyard-pickleball-starter-kit": "https://amzn.to/3Pxq4oU"
 };
 
 const baseFeatures: Record<ProductCategory, string[]> = {
