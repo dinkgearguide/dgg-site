@@ -110,6 +110,19 @@ const featuredProductCopy: Record<string, Partial<Pick<Product, "shortDescriptio
       "Prioritize usable paddles, balls, and storage over novelty accessories."
     ]
   },
+  "backyard-pickleball-starter-kit": {
+    shortDescription: "A portable net bundle for turning a driveway, gym space, or flat practice area into a casual pickleball setup.",
+    longDescription: "A backyard pickleball starter kit is the right kind of bundle when you need more than paddles and balls. The linked option is listed by the retailer as a four-player set with a regulation-size portable net, outdoor balls, paddles, court markers, and carry bags. That makes it more useful for driveways, temporary courts, gyms, and family play than a paddle-only starter set. New players should still check the current product page before buying, especially the net dimensions, setup method, included ball count, bag contents, and any paddle approval details.",
+    features: ["Portable net system", "Four-player gear bundle", "Court markers and carry bags"],
+    pros: ["Includes the main pieces needed for temporary play", "Better fit for backyard setup than paddle-only bundles", "Carry bags help keep the net and gear organized"],
+    cons: ["Takes more setup space than a basic paddle set", "Net quality and stability should be checked against where you plan to play", "Tournament approval claims should be verified before sanctioned play"],
+    buyingTips: [
+      "Confirm the net is regulation size and fits the space where you plan to play.",
+      "Check the current listing for the exact number of balls, bags, markers, and paddles included.",
+      "If sanctioned tournaments matter to you, verify paddle approval with the relevant governing body before buying.",
+      "For driveway use, make sure you have a flat surface and enough room around the net for safe recreational play."
+    ]
+  },
   "lightweight-control-paddle": {
     shortDescription: "A first personal paddle for beginners who want easy handling and control before extra power.",
     longDescription: "A lightweight control paddle is a sensible first personal paddle for players who are moving beyond shared starter gear. New players often benefit from a paddle that feels easy to move during serves, returns, volleys, and dink exchanges. The point is not to maximize power right away; it is to make consistent contact and learn touch shots without fighting the paddle. Before buying, check the listed weight range, grip circumference, return policy, and any tournament approval details if sanctioned play may be in your future.",
