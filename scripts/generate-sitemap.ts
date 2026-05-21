@@ -1,4 +1,5 @@
 import { writeFileSync } from "node:fs";
+import { guides } from "../src/data/guides";
 import { products } from "../src/data/products";
 import { absoluteUrl, isProductIndexable } from "../src/lib/seo";
 
@@ -19,6 +20,7 @@ const staticEntries: SitemapEntry[] = [
   { path: "/bags/", lastmod: today, changefreq: "monthly", priority: "0.8" },
   { path: "/balls/", lastmod: today, changefreq: "monthly", priority: "0.8" },
   { path: "/gifts/", lastmod: today, changefreq: "monthly", priority: "0.8" },
+  { path: "/guides/", lastmod: today, changefreq: "weekly", priority: "0.8" },
   { path: "/gear/", lastmod: today, changefreq: "weekly", priority: "0.7" },
   { path: "/gear-decision-framework/", lastmod: today, changefreq: "monthly", priority: "0.7" },
   { path: "/about/", lastmod: today, changefreq: "yearly", priority: "0.3" },
@@ -35,7 +37,14 @@ const productEntries: SitemapEntry[] = products.filter(isProductIndexable).map((
   priority: "0.6"
 }));
 
-const entries = [...staticEntries, ...productEntries];
+const guideEntries: SitemapEntry[] = guides.map((guide) => ({
+  path: `/guides/${guide.slug}/`,
+  lastmod: guide.lastReviewedAt,
+  changefreq: "monthly",
+  priority: "0.7"
+}));
+
+const entries = [...staticEntries, ...guideEntries, ...productEntries];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

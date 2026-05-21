@@ -1,4 +1,5 @@
 import { existsSync, readFileSync } from "node:fs";
+import { guides } from "../src/data/guides";
 import { products } from "../src/data/products";
 import { absoluteUrl, isPlaceholderAffiliateUrl, isProductIndexable } from "../src/lib/seo";
 
@@ -40,6 +41,11 @@ for (const product of products) {
   if (isProductIndexable(product) && isPlaceholderAffiliateUrl(product.affiliateUrl)) {
     fail(`indexable product has a placeholder affiliate URL: ${product.slug}`);
   }
+}
+
+for (const guide of guides) {
+  const guideUrl = absoluteUrl(`/guides/${guide.slug}/`);
+  if (!sitemap.includes(guideUrl)) fail(`published guide is missing from sitemap: ${guide.slug}`);
 }
 
 console.log(`SEO validation passed for ${sitemapUrls.length} sitemap URLs and ${products.length} products.`);

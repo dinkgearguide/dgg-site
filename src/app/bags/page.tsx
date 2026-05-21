@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { BeginnerNextSteps } from "@/components/BeginnerNextSteps";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ChecklistSection } from "@/components/ChecklistSection";
 import { JsonLd } from "@/components/JsonLd";
@@ -25,6 +27,8 @@ export default function BagsPage() {
         <div className="mt-4 grid gap-5 leading-8 text-slate-700 md:grid-cols-2">
           <p>Bag choice depends on how often you play and how much you bring. A sling bag can be perfect for one paddle and a few balls. A backpack starts to make sense when you carry shoes, layers, water, snacks, or gear for more than one person.</p>
           <p>A beginner bag should be easy to grab and easy to put away. If it is too large or too specialized, it may stay home. Look for practical pockets, comfortable straps, and enough structure to protect your paddle without turning every court trip into packing for travel.</p>
+          <p>Sling bags are usually enough for a single casual player. Backpacks work better for weekly players carrying water, towel, grip tape, extra balls, and layers. Tote-style bags are simple and easy to load, but they may offer less structure for paddle protection.</p>
+          <p>New players usually need to carry less than they think: paddle, balls, water, towel, keys, phone, and maybe overgrip. Use the <Link href="/guides/what-to-keep-in-your-pickleball-bag/" className="font-bold text-court underline">pickleball bag checklist</Link> before buying a bigger bag.</p>
         </div>
       </section>
       <div className="mt-8 grid gap-5 md:grid-cols-3">
@@ -34,6 +38,7 @@ export default function BagsPage() {
       </div>
       <h2 className="mt-10 text-3xl font-black text-ink">Bag picks</h2>
       <div className="mt-5"><ProductGrid products={categoryProducts} /></div>
+      <BeginnerNextSteps />
     </main>
   );
 }

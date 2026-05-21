@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { BeginnerNextSteps } from "@/components/BeginnerNextSteps";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ChecklistSection } from "@/components/ChecklistSection";
 import { JsonLd } from "@/components/JsonLd";
@@ -25,6 +27,8 @@ export default function GiftsPage() {
         <div className="mt-4 grid gap-5 leading-8 text-slate-700 md:grid-cols-2">
           <p>The easiest pickleball gifts are the ones players will use even if they already own a paddle. Balls, overgrips, towels, paddle covers, and simple court accessories are low-risk because they support regular play without requiring exact preference matching.</p>
           <p>If you want to give a bigger gift, think about the recipient&apos;s situation. A brand-new player may appreciate a starter set. Someone who already attends open play may prefer a better bag, extra balls, or a practical bundle of small items they can keep in the car.</p>
+          <p>Safe gift categories include ball packs, compact bags, grip tape, paddle covers, towels, and starter gear for people who do not own anything yet. Gifts to avoid include random premium paddles, advanced training tools, and accessories that only make sense for a player with specific preferences.</p>
+          <p>When in doubt, choose a practical item that supports court time. The <Link href="/guides/pickleball-gifts-for-beginners/" className="font-bold text-court underline">pickleball gifts for beginners guide</Link> has a simple recipient-by-recipient matrix.</p>
         </div>
       </section>
       <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -36,6 +40,7 @@ export default function GiftsPage() {
       </div>
       <h2 className="mt-10 text-3xl font-black text-ink">Gift picks</h2>
       <div className="mt-5"><ProductGrid products={categoryProducts} /></div>
+      <BeginnerNextSteps />
     </main>
   );
 }

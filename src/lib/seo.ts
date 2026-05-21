@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { Guide } from "@/data/guides";
 import type { Product } from "@/types/product";
 import { siteConfig } from "@/lib/site";
 
@@ -151,5 +152,44 @@ export function itemListJsonLd(name: string, path: string, items: Product[]) {
       name: product.name,
       url: absoluteUrl(`/gear/${product.slug}/`)
     }))
+  };
+}
+
+export function guideItemListJsonLd(name: string, path: string, items: Guide[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    url: absoluteUrl(path),
+    itemListElement: items.map((guide, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: guide.title,
+      url: absoluteUrl(`/guides/${guide.slug}/`)
+    }))
+  };
+}
+
+export function articleJsonLd(guide: Guide) {
+  const url = absoluteUrl(`/guides/${guide.slug}/`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: guide.title,
+    description: guide.description,
+    datePublished: guide.lastReviewedAt,
+    dateModified: guide.lastReviewedAt,
+    author: {
+      "@type": "Organization",
+      name: siteConfig.author
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url
+    }
   };
 }

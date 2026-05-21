@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { BeginnerNextSteps } from "@/components/BeginnerNextSteps";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ChecklistSection } from "@/components/ChecklistSection";
 import { JsonLd } from "@/components/JsonLd";
@@ -26,6 +28,8 @@ export default function BeginnerPaddlesPage() {
         <div className="mt-4 grid gap-5 leading-8 text-slate-700 md:grid-cols-2">
           <p>A first paddle should help you keep the ball in play. That usually means a forgiving face shape, a comfortable handle, and a balanced feel. The goal is not to buy the hardest-hitting paddle on the shelf; it is to make serves, returns, dinks, and resets easier to learn.</p>
           <p>Price can matter, but it is not the whole story. Budget paddles can be useful for casual starts, while mid-range paddles often make sense once you know you will play weekly. Premium paddles are usually better saved until your preferences are clearer.</p>
+          <p>Weight affects how quickly the paddle moves in hand. Grip size affects comfort and control. A forgiving shape helps newer players make cleaner contact while they are still learning timing. Surface and core materials can matter, but they should not distract from basic fit.</p>
+          <p>If sanctioned tournaments are part of your plan, verify approval with the relevant governing body before buying. For a step-by-step breakdown, read <Link href="/guides/how-to-choose-your-first-pickleball-paddle/" className="font-bold text-court underline">how to choose your first pickleball paddle</Link>.</p>
         </div>
       </section>
       <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -38,6 +42,7 @@ export default function BeginnerPaddlesPage() {
       </div>
       <h2 className="mt-10 text-3xl font-black text-ink">Beginner paddle picks</h2>
       <div className="mt-5"><ProductGrid products={categoryProducts} /></div>
+      <BeginnerNextSteps />
     </main>
   );
 }

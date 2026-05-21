@@ -4,6 +4,8 @@ import { Hero } from "@/components/Hero";
 import { IconBadge, type IconName } from "@/components/IconBadge";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductGrid } from "@/components/ProductGrid";
+import { GuideCard } from "@/components/GuideCard";
+import { guides } from "@/data/guides";
 import { products } from "@/data/products";
 import { organizationJsonLd, pageMetadata, websiteJsonLd } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
@@ -26,6 +28,12 @@ const essentials: Array<{ icon: IconName; text: string }> = [
   { icon: "bag", text: "A simple way to carry and protect gear" }
 ];
 
+const homepageGuideSlugs = [
+  "what-to-buy-before-your-first-pickleball-game",
+  "pickleball-starter-set-vs-single-paddle",
+  "indoor-vs-outdoor-pickleball-balls"
+];
+
 export default function Home() {
   return (
     <main>
@@ -35,6 +43,15 @@ export default function Home() {
       <Section title="Start Here">
         <div className="grid gap-5 md:grid-cols-3">
           {start.map(([title, href, description]) => <CategoryCard key={href} title={title} href={href} description={description} />)}
+        </div>
+      </Section>
+      <Section title="Beginner Gear Guides">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <CategoryCard title="Pickleball Gear Checklist for Beginners" href="/gear-checklist/" description="The main checklist for what to buy first, what can wait, and how to avoid overbuying." />
+          {homepageGuideSlugs.map((slug) => {
+            const guide = guides.find((item) => item.slug === slug);
+            return guide ? <GuideCard key={guide.slug} guide={guide} /> : null;
+          })}
         </div>
       </Section>
       <Section title="Featured Categories">

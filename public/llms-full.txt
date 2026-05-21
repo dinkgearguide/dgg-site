@@ -13,6 +13,15 @@ The site is static. It does not run checkout, payments, accounts, live price scr
 ## Main Guides
 
 - https://dinkgearguide.com/gear-checklist/ - beginner pickleball gear checklist
+- https://dinkgearguide.com/guides/ - beginner pickleball gear guides hub
+- https://dinkgearguide.com/guides/what-to-buy-before-your-first-pickleball-game/ - what to buy before your first pickleball game
+- https://dinkgearguide.com/guides/pickleball-starter-set-vs-single-paddle/ - pickleball starter set vs. single paddle
+- https://dinkgearguide.com/guides/indoor-vs-outdoor-pickleball-balls/ - indoor vs. outdoor pickleball balls
+- https://dinkgearguide.com/guides/what-pickleball-gear-can-beginners-skip/ - beginner gear to skip at first
+- https://dinkgearguide.com/guides/what-to-keep-in-your-pickleball-bag/ - pickleball bag checklist
+- https://dinkgearguide.com/guides/how-to-choose-your-first-pickleball-paddle/ - how to choose a first paddle
+- https://dinkgearguide.com/guides/pickleball-gifts-for-beginners/ - practical pickleball gifts for beginners
+- https://dinkgearguide.com/guides/backyard-pickleball-setup-for-beginners/ - backyard pickleball setup
 - https://dinkgearguide.com/gear-decision-framework/ - beginner pickleball gear decision framework
 - https://dinkgearguide.com/starter-sets/ - best pickleball starter sets
 - https://dinkgearguide.com/beginner-paddles/ - best beginner pickleball paddles
@@ -25,7 +34,7 @@ The site is static. It does not run checkout, payments, accounts, live price scr
 
 - Starter Sets: beginner kits for couples, families, groups, and casual driveway games.
 - Beginner Paddles: control-first, comfort-focused paddles for newer players.
-- Balls: indoor, outdoor, mixed, high-visibility, and larger recreation ball packs.
+- Balls: indoor, outdoor, and mixed ball packs.
 - Bags: sling bags, backpacks, tote-style bags, and shared gear bags.
 - Nets: portable backyard, driveway, and practice nets.
 - Grip Tape: grip tape rolls and overgrip packs.

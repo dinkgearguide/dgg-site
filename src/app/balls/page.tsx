@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { BeginnerNextSteps } from "@/components/BeginnerNextSteps";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ChecklistSection } from "@/components/ChecklistSection";
 import { JsonLd } from "@/components/JsonLd";
@@ -25,6 +27,8 @@ export default function BallsPage() {
         <div className="mt-4 grid gap-5 leading-8 text-slate-700 md:grid-cols-2">
           <p>Outdoor balls are usually harder and built to handle wind, sun, and rougher court surfaces. Indoor balls tend to feel softer and are designed for gym floors or smoother indoor courts. Mixing them up can make the game feel inconsistent for beginners.</p>
           <p>If you only know one thing before buying, know where you will play most often. A small pack that matches your main court is better than a large pack of the wrong ball. Add a mixed pack only if you regularly switch between indoor and outdoor play.</p>
+          <p>Ball type matters because bounce, speed, and feel change across surfaces. Outdoor balls often use smaller holes to fly more predictably in wind. Indoor balls often use larger holes and softer plastic for smoother floors. Beginners who switch between both court types may want separate packs clearly labeled in their bag.</p>
+          <p>Choose visibility over novelty. Bright balls are easier for groups to track, especially on busy public courts. For a deeper comparison, read the <Link href="/guides/indoor-vs-outdoor-pickleball-balls/" className="font-bold text-court underline">indoor vs. outdoor pickleball balls guide</Link>.</p>
         </div>
       </section>
       <div className="mt-8 grid gap-5 md:grid-cols-3">
@@ -34,6 +38,7 @@ export default function BallsPage() {
       </div>
       <h2 className="mt-10 text-3xl font-black text-ink">Ball picks</h2>
       <div className="mt-5"><ProductGrid products={categoryProducts} /></div>
+      <BeginnerNextSteps />
     </main>
   );
 }

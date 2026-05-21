@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { BeginnerNextSteps } from "@/components/BeginnerNextSteps";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ChecklistSection } from "@/components/ChecklistSection";
 import { JsonLd } from "@/components/JsonLd";
@@ -29,6 +31,8 @@ function CategoryGuide({ title, category }: { title: string; category: "Starter 
         <div className="mt-4 grid gap-5 leading-8 text-slate-700 md:grid-cols-2">
           <p>A starter set should make it easy to get on court, not lock you into advanced preferences before you understand them. Look first at the number of paddles, whether the balls match your court type, and whether the set includes a bag that keeps everything together.</p>
           <p>The paddles in many starter sets are fine for casual games but may not be what you use forever. That is not a failure if the set helps a household or group start playing. Treat the set as shared gear, then upgrade individual paddles later if someone starts playing regularly.</p>
+          <p>Starter sets are strongest for couples, families, guest gear, and casual backyard games because one purchase can cover several people. They are weaker for a weekly beginner who already knows they want a personal paddle with a specific grip size, weight, or shape.</p>
+          <p>Before buying, check exactly what is included. A larger bundle is not automatically better if the balls do not match your court or the bag is too small to keep the set organized. For more detail, read the <Link href="/guides/pickleball-starter-set-vs-single-paddle/" className="font-bold text-court underline">starter set vs. single paddle guide</Link>.</p>
         </div>
       </section>
       <div className="mt-8 grid gap-5 md:grid-cols-2">
@@ -39,6 +43,7 @@ function CategoryGuide({ title, category }: { title: string; category: "Starter 
       </div>
       <h2 className="mt-10 text-3xl font-black text-ink">Starter set picks</h2>
       <div className="mt-5"><ProductGrid products={categoryProducts} /></div>
+      <BeginnerNextSteps />
     </main>
   );
 }
