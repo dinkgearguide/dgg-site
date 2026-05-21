@@ -4,7 +4,11 @@ import { CTASection } from "@/components/CTASection";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 
-export const metadata = pageMetadata("Pickleball Gear Checklist for Beginners | Dink Gear Guide", "A practical beginner pickleball gear checklist covering must-haves, nice-to-haves, skip-first items, and upgrade paths.", "/gear-checklist/");
+export const metadata = pageMetadata(
+  "Pickleball Gear Checklist for Beginners: What to Buy First",
+  "New to pickleball? Use this beginner gear checklist to choose paddles, balls, bags, starter sets, and accessories — plus what to skip at first.",
+  "/gear-checklist/"
+);
 
 export default function GearChecklistPage() {
   return (

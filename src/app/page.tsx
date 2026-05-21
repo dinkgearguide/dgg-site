@@ -2,13 +2,15 @@ import { CategoryCard } from "@/components/CategoryCard";
 import { DecisionFrameworkCallout } from "@/components/DecisionFrameworkCallout";
 import { Hero } from "@/components/Hero";
 import { IconBadge, type IconName } from "@/components/IconBadge";
+import { JsonLd } from "@/components/JsonLd";
 import { ProductGrid } from "@/components/ProductGrid";
 import { products } from "@/data/products";
-import { pageMetadata } from "@/lib/seo";
+import { organizationJsonLd, pageMetadata, websiteJsonLd } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 export const metadata = pageMetadata(
   "Dink Gear Guide | Beginner Pickleball Gear Guides",
-  "Beginner-friendly pickleball gear guides for paddles, starter sets, balls, bags, accessories, and gifts — simple advice without the hype.",
+  siteConfig.description,
   "/"
 );
 
@@ -27,6 +29,8 @@ const essentials: Array<{ icon: IconName; text: string }> = [
 export default function Home() {
   return (
     <main>
+      <JsonLd data={websiteJsonLd()} />
+      <JsonLd data={organizationJsonLd()} />
       <Hero />
       <Section title="Start Here">
         <div className="grid gap-5 md:grid-cols-3">

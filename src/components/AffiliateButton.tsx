@@ -2,9 +2,10 @@
 
 import type { Product } from "@/types/product";
 import { trackAffiliateClick } from "@/lib/affiliate";
+import { isPlaceholderAffiliateUrl } from "@/lib/seo";
 
 export function AffiliateButton({ product }: { product: Product }) {
-  const isPlaceholder = product.affiliateUrl === "#replace-with-affiliate-link";
+  const isPlaceholder = isPlaceholderAffiliateUrl(product.affiliateUrl);
 
   if (isPlaceholder) {
     return (
@@ -27,7 +28,8 @@ export function AffiliateButton({ product }: { product: Product }) {
         href={product.affiliateUrl}
         onClick={() => trackAffiliateClick(product)}
         className="inline-flex min-h-11 items-center justify-center rounded-md bg-court px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-emerald-800 focus:outline-none focus:ring-4 focus:ring-emerald-200"
-        rel="sponsored nofollow"
+        rel="sponsored nofollow noopener noreferrer"
+        target="_blank"
       >
         Check current price
       </a>

@@ -1,10 +1,40 @@
 import type { Metadata } from "next";
 import type { Product } from "@/types/product";
+import { siteConfig } from "@/lib/site";
 
-const siteUrl = "https://dinkgearguide.com";
+type MetadataInput = {
+  title: string;
+  description: string;
+  path: string;
+  noIndex?: boolean;
+};
 
-export function pageMetadata(title: string, description: string, path = "/"): Metadata {
-  const canonical = `${siteUrl}${path}`;
+export function absoluteUrl(path: string): string {
+  if (!path || path === "/") return `${siteConfig.domain}/`;
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  return `${siteConfig.domain}${cleanPath}`;
+}
+
+export function isPlaceholderAffiliateUrl(url?: string): boolean {
+  return !url || url.trim() === "" || url === "#" || url === "#replace-with-affiliate-link";
+}
+
+export function isProductIndexable(product: Product): boolean {
+  if (product.seoIndexable === false) return false;
+  if (isPlaceholderAffiliateUrl(product.affiliateUrl)) return false;
+  return Boolean(
+    product.name.trim() &&
+      product.slug.trim() &&
+      product.shortDescription.trim() &&
+      product.longDescription.trim() &&
+      product.category.trim() &&
+      !isPlaceholderAffiliateUrl(product.affiliateUrl)
+  );
+}
+
+export function buildPageMetadata({ title, description, path, noIndex = false }: MetadataInput): Metadata {
+  const canonical = absoluteUrl(path);
   return {
     title,
     description,
@@ -13,19 +43,36 @@ export function pageMetadata(title: string, description: string, path = "/"): Me
       title,
       description,
       url: canonical,
-      siteName: "Dink Gear Guide",
+      siteName: siteConfig.name,
       type: "website"
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description
+    },
+    robots: {
+      index: !noIndex,
+      follow: true,
+      googleBot: {
+        index: !noIndex,
+        follow: true
+      }
     }
   };
+}
+
+export function pageMetadata(title: string, description: string, path = "/", noIndex = false): Metadata {
+  return buildPageMetadata({ title, description, path, noIndex });
 }
 
 export function websiteJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Dink Gear Guide",
-    url: siteUrl,
-    description: "Beginner-friendly pickleball gear guides for paddles, starter sets, balls, bags, accessories, and gifts."
+    name: siteConfig.name,
+    url: `${siteConfig.domain}/`,
+    description: siteConfig.description
   };
 }
 
@@ -33,9 +80,9 @@ export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Dink Gear Guide",
-    url: siteUrl,
-    description: "Beginner-friendly pickleball gear without the guesswork.",
+    name: siteConfig.name,
+    url: `${siteConfig.domain}/`,
+    description: siteConfig.tagline,
     email: "info@dinkgearguide.com"
   };
 }
@@ -48,7 +95,7 @@ export function breadcrumbJsonLd(items: Array<{ name: string; path: string }>) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `${siteUrl}${item.path}`
+      item: absoluteUrl(item.path)
     }))
   };
 }
@@ -57,16 +104,12 @@ export function productJsonLd(product: Product) {
   return {
     "@context": "https://schema.org",
     "@type": "Product",
-    "@id": `${siteUrl}/gear/${product.slug}/#product`,
+    "@id": `${absoluteUrl(`/gear/${product.slug}/`)}#product`,
     name: product.name,
     description: product.longDescription,
-    image: `${siteUrl}${product.image}`,
+    image: absoluteUrl(product.image),
     category: product.category,
-    url: `${siteUrl}/gear/${product.slug}/`,
-    brand: {
-      "@type": "Brand",
-      name: "Dink Gear Guide"
-    },
+    url: absoluteUrl(`/gear/${product.slug}/`),
     audience: {
       "@type": "Audience",
       audienceType: `${product.skillLevel} pickleball players`
@@ -101,12 +144,12 @@ export function itemListJsonLd(name: string, path: string, items: Product[]) {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name,
-    url: `${siteUrl}${path}`,
+    url: absoluteUrl(path),
     itemListElement: items.map((product, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: product.name,
-      url: `${siteUrl}/gear/${product.slug}/`
+      url: absoluteUrl(`/gear/${product.slug}/`)
     }))
   };
 }

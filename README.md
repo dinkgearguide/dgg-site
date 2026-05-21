@@ -43,6 +43,16 @@ public/images/products/
 
 Use owner-provided or properly licensed replacement images.
 
+## SEO Setup
+
+- The sitemap is generated at `public/sitemap.xml` before build.
+- The live sitemap should be available at `https://dinkgearguide.com/sitemap.xml`.
+- The live robots file should be available at `https://dinkgearguide.com/robots.txt`.
+- Submit the sitemap in Google Search Console after deployment.
+- Placeholder products with missing affiliate links should remain noindex and should not appear in the sitemap.
+- Affiliate links should use `rel="sponsored nofollow"`.
+- Do not use fake reviews, fake ratings, or fake pricing schema.
+
 ## Deployment
 
 GitHub Pages deployment is handled by:

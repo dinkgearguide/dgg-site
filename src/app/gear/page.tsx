@@ -4,7 +4,11 @@ import { ProductFilters } from "@/components/ProductFilters";
 import { products } from "@/data/products";
 import { breadcrumbJsonLd, itemListJsonLd, pageMetadata } from "@/lib/seo";
 
-export const metadata = pageMetadata("All Pickleball Gear | Dink Gear Guide", "Browse beginner-friendly pickleball paddles, starter sets, balls, bags, court accessories, and gifts.", "/gear/");
+export const metadata = pageMetadata(
+  "Beginner Pickleball Gear Guide | Dink Gear Guide",
+  "Browse beginner-friendly pickleball paddles, starter sets, balls, bags, nets, grip tape, court accessories, and gift ideas.",
+  "/gear/"
+);
 
 export default function GearPage() {
   return (

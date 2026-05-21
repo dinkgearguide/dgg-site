@@ -209,6 +209,10 @@ export const products: Product[] = items.map(([name, category, bestFor, skillLev
     image: imageBySlug[slug] ?? imageByCategory[category],
     personallyTested: false,
     featured,
+    seoIndexable: Boolean(affiliateUrlBySlug[slug]),
+    seoTitle: `${name} | Dink Gear Guide`,
+    seoDescription: overrides.shortDescription ?? descriptions[category],
+    lastReviewedAt: "2026-05-20",
     relatedProductIds: []
   };
 }).map((product, index, all) => ({

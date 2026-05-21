@@ -32,4 +32,8 @@ export type Product = {
   personallyTested: boolean;
   featured: boolean;
   relatedProductIds: string[];
+  seoIndexable?: boolean;
+  seoTitle?: string;
+  seoDescription?: string;
+  lastReviewedAt?: string;
 };

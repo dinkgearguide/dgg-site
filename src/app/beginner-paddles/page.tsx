@@ -3,14 +3,20 @@ import { ChecklistSection } from "@/components/ChecklistSection";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductGrid } from "@/components/ProductGrid";
 import { getProductsByCategory } from "@/data/products";
-import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, itemListJsonLd, pageMetadata } from "@/lib/seo";
 
-export const metadata = pageMetadata("Best Beginner Pickleball Paddles | Dink Gear Guide", "Simple beginner paddle guidance for weight, grip size, control, durability, price tier, comfort, and beginner friendliness.", "/beginner-paddles/");
+export const metadata = pageMetadata(
+  "Best Beginner Pickleball Paddles: Simple First-Paddle Guide",
+  "Find beginner-friendly pickleball paddles and learn how weight, grip size, control, comfort, and price tier affect your first paddle choice.",
+  "/beginner-paddles/"
+);
 
 export default function BeginnerPaddlesPage() {
+  const categoryProducts = getProductsByCategory("Beginner Paddles");
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Beginner Paddles", path: "/beginner-paddles/" }])} />
+      <JsonLd data={itemListJsonLd("Best Beginner Pickleball Paddles", "/beginner-paddles/", categoryProducts)} />
       <Breadcrumbs items={[{ label: "Beginner Paddles", href: "/beginner-paddles/" }]} />
       <h1 className="text-4xl font-black text-ink">Best Beginner Pickleball Paddles</h1>
       <p className="mt-4 max-w-3xl leading-8 text-slate-700">New players usually benefit from control, comfort, and forgiving paddle shape before chasing advanced power specs.</p>
@@ -31,7 +37,7 @@ export default function BeginnerPaddlesPage() {
         <ChecklistSection title="Comfort" items={["Handle feel matters", "Avoid claims about treating pain", "Try to match how often you play"]} />
       </div>
       <h2 className="mt-10 text-3xl font-black text-ink">Beginner paddle picks</h2>
-      <div className="mt-5"><ProductGrid products={getProductsByCategory("Beginner Paddles")} /></div>
+      <div className="mt-5"><ProductGrid products={categoryProducts} /></div>
     </main>
   );
 }

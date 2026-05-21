@@ -3,14 +3,20 @@ import { ChecklistSection } from "@/components/ChecklistSection";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductGrid } from "@/components/ProductGrid";
 import { getProductsByCategory } from "@/data/products";
-import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, itemListJsonLd, pageMetadata } from "@/lib/seo";
 
-export const metadata = pageMetadata("Best Pickleball Bags | Dink Gear Guide", "Compare beginner-friendly pickleball sling bags, backpacks, and tote-style bags.", "/bags/");
+export const metadata = pageMetadata(
+  "Best Pickleball Bags for Beginners",
+  "Compare pickleball sling bags, backpacks, and totes for new players carrying paddles, balls, water, keys, and court accessories.",
+  "/bags/"
+);
 
 export default function BagsPage() {
+  const categoryProducts = getProductsByCategory("Bags");
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Bags", path: "/bags/" }])} />
+      <JsonLd data={itemListJsonLd("Best Pickleball Bags", "/bags/", categoryProducts)} />
       <Breadcrumbs items={[{ label: "Bags", href: "/bags/" }]} />
       <h1 className="text-4xl font-black text-ink">Best Pickleball Bags</h1>
       <p className="mt-4 max-w-3xl leading-8 text-slate-700">A good beginner bag should make it easier to bring your paddle, balls, water, and small accessories without becoming a bulky chore.</p>
@@ -27,7 +33,7 @@ export default function BagsPage() {
         <ChecklistSection title="Tote-style bags" items={["Simple open access", "Good for casual court trips", "Less structured organization"]} />
       </div>
       <h2 className="mt-10 text-3xl font-black text-ink">Bag picks</h2>
-      <div className="mt-5"><ProductGrid products={getProductsByCategory("Bags")} /></div>
+      <div className="mt-5"><ProductGrid products={categoryProducts} /></div>
     </main>
   );
 }

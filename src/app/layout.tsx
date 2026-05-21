@@ -4,21 +4,18 @@ import { AffiliateDisclosureBanner } from "@/components/AffiliateDisclosureBanne
 import { CloudflareAnalytics } from "@/components/CloudflareAnalytics";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { JsonLd } from "@/components/JsonLd";
-import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dinkgearguide.com"),
-  title: "Dink Gear Guide",
-  description: "Beginner-friendly pickleball gear guides for paddles, starter sets, balls, bags, accessories, and gifts — simple advice without the hype."
+  metadataBase: new URL(siteConfig.domain),
+  title: siteConfig.name,
+  description: siteConfig.description
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body>
-        <JsonLd data={websiteJsonLd()} />
-        <JsonLd data={organizationJsonLd()} />
         <AffiliateDisclosureBanner />
         <Header />
         {children}

@@ -3,14 +3,20 @@ import { ChecklistSection } from "@/components/ChecklistSection";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductGrid } from "@/components/ProductGrid";
 import { getProductsByCategory } from "@/data/products";
-import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, itemListJsonLd, pageMetadata } from "@/lib/seo";
 
-export const metadata = pageMetadata("Best Pickleball Gifts | Dink Gear Guide", "Practical pickleball gift ideas for brand-new and recreational players using price tiers instead of live prices.", "/gifts/");
+export const metadata = pageMetadata(
+  "Pickleball Gifts for Beginners: Practical Ideas They’ll Use",
+  "Find practical pickleball gifts for new players, including starter gear, balls, bags, accessories, and simple court essentials.",
+  "/gifts/"
+);
 
 export default function GiftsPage() {
+  const categoryProducts = getProductsByCategory("Gifts");
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
       <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Gifts", path: "/gifts/" }])} />
+      <JsonLd data={itemListJsonLd("Best Pickleball Gifts", "/gifts/", categoryProducts)} />
       <Breadcrumbs items={[{ label: "Gifts", href: "/gifts/" }]} />
       <h1 className="text-4xl font-black text-ink">Best Pickleball Gifts</h1>
       <p className="mt-4 max-w-3xl leading-8 text-slate-700">Good pickleball gifts are useful, easy to understand, and do not require guessing a player&apos;s advanced preferences.</p>
@@ -29,7 +35,7 @@ export default function GiftsPage() {
         <ChecklistSection title="Gifts for brand-new players" items={["Starter set", "Beginner paddle", "Mixed ball pack", "Simple court bag"]} />
       </div>
       <h2 className="mt-10 text-3xl font-black text-ink">Gift picks</h2>
-      <div className="mt-5"><ProductGrid products={getProductsByCategory("Gifts")} /></div>
+      <div className="mt-5"><ProductGrid products={categoryProducts} /></div>
     </main>
   );
 }
