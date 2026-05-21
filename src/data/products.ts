@@ -67,8 +67,6 @@ const items: Array<[string, ProductCategory, string, SkillLevel, PriceTier, bool
   ["Outdoor Pickleball Ball Pack", "Balls", "Outdoor courts and parks", "Beginner", "Budget", true],
   ["Indoor Pickleball Ball Pack", "Balls", "Gym and indoor court play", "Beginner", "Budget", true],
   ["Mixed Indoor Outdoor Ball Pack", "Balls", "Trying both court types", "Brand new", "Mid-range", false],
-  ["High-Visibility Practice Balls", "Balls", "Tracking the ball more easily", "Beginner", "Budget", false],
-  ["Large Recreation Ball Pack", "Balls", "Groups that lose balls often", "Recreational", "Mid-range", false],
   ["Compact Pickleball Sling Bag", "Bags", "One paddle and light carry", "Beginner", "Budget", true],
   ["Pickleball Backpack", "Bags", "Regular players carrying more gear", "Recreational", "Mid-range", true],
   ["Tote-Style Pickleball Bag", "Bags", "Simple open storage", "Beginner", "Mid-range", false],
