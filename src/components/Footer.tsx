@@ -10,17 +10,7 @@ const links = [
 ];
 
 const resources = [
-  ["Resources", "/resources/"],
-  ["Printable Checklist", "/pickleball-gear-checklist-printable/"],
-  ["Club Handout", "/pickleball-club-beginner-gear-handout/"],
-  ["Gear Checklist", "/gear-checklist/"],
-  ["Beginner Guides", "/guides/"],
-  ["All Gear", "/gear/"],
-  ["Starter Sets", "/starter-sets/"],
-  ["Beginner Paddles", "/beginner-paddles/"],
-  ["Balls", "/balls/"],
-  ["Bags", "/bags/"],
-  ["Gifts", "/gifts/"]
+  ["Resources", "/resources/"]
 ];
 
 export function Footer() {
