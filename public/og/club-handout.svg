@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Beginner Gear Handout for Clubs</title>
+  <desc id="desc">Dink Gear Guide social preview for a beginner pickleball gear handout.</desc>
+  <rect width="1200" height="630" fill="#f0fdf4"/>
+  <rect x="80" y="70" width="1040" height="490" rx="28" fill="#ffffff" stroke="#bbf7d0" stroke-width="4"/>
+  <text x="130" y="155" fill="#047857" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Dink Gear Guide</text>
+  <text x="130" y="255" fill="#17202a" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="900">Beginner Gear Handout</text>
+  <text x="130" y="330" fill="#17202a" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="900">for Clubs</text>
+  <text x="130" y="420" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="32">A simple shareable resource for new players</text>
+  <rect x="850" y="180" width="180" height="250" rx="18" fill="#ecfdf5" stroke="#047857" stroke-width="5"/>
+  <path d="M890 235h100M890 285h100M890 335h100M890 385h100" stroke="#047857" stroke-width="12" stroke-linecap="round"/>
+</svg>

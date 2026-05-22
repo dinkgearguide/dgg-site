@@ -22,3 +22,86 @@ a {
 ::selection {
   background: #bbf7d0;
 }
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  @page {
+    margin: 0.55in;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background: #ffffff;
+    color: #000000;
+    font-size: 11pt;
+  }
+
+  header,
+  footer,
+  .no-print,
+  [data-print-hidden="true"] {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  main {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  section,
+  article,
+  table,
+  .print-avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  td,
+  th {
+    color: #000000 !important;
+  }
+
+  h1 {
+    font-size: 22pt !important;
+  }
+
+  h2 {
+    font-size: 15pt !important;
+  }
+
+  a {
+    color: #000000 !important;
+    text-decoration: none !important;
+  }
+
+  table {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  th,
+  td {
+    border: 1px solid #cbd5e1;
+    padding: 8px !important;
+  }
+
+  .print-checklist-item {
+    border: 1px solid #94a3b8 !important;
+    box-shadow: none !important;
+  }
+}

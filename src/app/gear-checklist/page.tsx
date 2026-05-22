@@ -67,6 +67,12 @@ export default function GearChecklistPage() {
       <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-700">
         New pickleball players need a paddle, the right ball for the court, court access, comfortable court-friendly shoes, water, and optionally a simple bag. That is enough to start. Most other gear can wait until you know how often you play, where you play, and what feels inconvenient after a few real games.
       </p>
+      <div className="mt-6 rounded-lg border border-blue-100 bg-blue-50 p-5">
+        <p className="text-lg font-black text-ink">Want a quick version?</p>
+        <Link href="/pickleball-gear-checklist-printable/" className="mt-2 inline-flex font-bold text-court underline">
+          Print the free beginner pickleball gear checklist.
+        </Link>
+      </div>
 
       <section className="mt-8 rounded-lg border border-emerald-100 bg-emerald-50 p-6">
         <h2 className="text-2xl font-black text-ink">Quick Answer: What Do You Need to Play Pickleball?</h2>

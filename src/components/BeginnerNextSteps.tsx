@@ -7,7 +7,8 @@ const links = [
   ["Balls", "/balls/"],
   ["Bags", "/bags/"],
   ["Gifts", "/gifts/"],
-  ["Guides", "/guides/"]
+  ["Guides", "/guides/"],
+  ["Resources", "/resources/"]
 ];
 
 export function BeginnerNextSteps() {

@@ -22,10 +22,18 @@ if (duplicateSitemapUrls.length) fail(`duplicate sitemap URLs: ${Array.from(new 
 const siteOrigin = new URL(siteConfig.domain).origin;
 const rootUrl = new URL("/", siteOrigin).toString();
 const sitemapUrl = new URL("/sitemap.xml", siteOrigin).toString();
+const requiredResourceUrls = [
+  "/pickleball-gear-checklist-printable/",
+  "/pickleball-club-beginner-gear-handout/",
+  "/resources/"
+].map((path) => new URL(path, siteOrigin).toString());
 const robotsSitemapUrls = Array.from(robots.matchAll(/^Sitemap:\s*(\S+)\s*$/gim)).map((match) => match[1]);
 
 if (!sitemapUrlSet.has(rootUrl)) fail("sitemap does not contain the root domain URL");
 if (!robotsSitemapUrls.some((url) => new URL(url).toString() === sitemapUrl)) fail("robots.txt does not reference the sitemap");
+for (const url of requiredResourceUrls) {
+  if (!sitemapUrlSet.has(url)) fail(`resource page is missing from sitemap: ${url}`);
+}
 
 for (const url of sitemapUrls) {
   const parsedUrl = new URL(url);

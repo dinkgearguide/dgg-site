@@ -13,6 +13,9 @@ The site is static. It does not run checkout, payments, accounts, live price scr
 ## Main Guides
 
 - https://dinkgearguide.com/gear-checklist/ - beginner pickleball gear checklist
+- https://dinkgearguide.com/resources/ - beginner pickleball resource hub
+- https://dinkgearguide.com/pickleball-gear-checklist-printable/ - printable beginner pickleball gear checklist
+- https://dinkgearguide.com/pickleball-club-beginner-gear-handout/ - club and rec center beginner gear handout
 - https://dinkgearguide.com/guides/ - beginner pickleball gear guides hub
 - https://dinkgearguide.com/guides/what-to-buy-before-your-first-pickleball-game/ - what to buy before your first pickleball game
 - https://dinkgearguide.com/guides/pickleball-starter-set-vs-single-paddle/ - pickleball starter set vs. single paddle

@@ -50,8 +50,17 @@ Use owner-provided or properly licensed replacement images.
 - The live robots file should be available at `https://dinkgearguide.com/robots.txt`.
 - Submit the sitemap in Google Search Console after deployment.
 - Placeholder products with missing affiliate links should remain noindex and should not appear in the sitemap.
-- Affiliate links should use `rel="sponsored nofollow"`.
+- Affiliate links should use `rel="sponsored nofollow noopener noreferrer"`.
 - Do not use fake reviews, fake ratings, or fake pricing schema.
+
+## Linkable Assets And Outreach
+
+- `/pickleball-gear-checklist-printable/` is the main shareable asset for new players.
+- `/pickleball-club-beginner-gear-handout/` is designed for clubs, instructors, and rec centers.
+- `/resources/` is the beginner resource hub.
+- These pages should be pitched to clubs and beginner communities, not spammed.
+- Keep the pages helpful and lightly commercial.
+- Update the last-reviewed date periodically.
 
 ## Deployment
 

@@ -10,8 +10,11 @@ const links = [
 ];
 
 const resources = [
+  ["Resources", "/resources/"],
+  ["Printable Checklist", "/pickleball-gear-checklist-printable/"],
+  ["Club Handout", "/pickleball-club-beginner-gear-handout/"],
   ["Gear Checklist", "/gear-checklist/"],
-  ["Guides", "/guides/"],
+  ["Beginner Guides", "/guides/"],
   ["All Gear", "/gear/"],
   ["Starter Sets", "/starter-sets/"],
   ["Beginner Paddles", "/beginner-paddles/"],

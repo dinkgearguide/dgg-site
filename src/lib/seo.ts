@@ -8,6 +8,7 @@ type MetadataInput = {
   description: string;
   path: string;
   noIndex?: boolean;
+  image?: string;
 };
 
 export function absoluteUrl(path: string): string {
@@ -34,8 +35,9 @@ export function isProductIndexable(product: Product): boolean {
   );
 }
 
-export function buildPageMetadata({ title, description, path, noIndex = false }: MetadataInput): Metadata {
+export function buildPageMetadata({ title, description, path, noIndex = false, image }: MetadataInput): Metadata {
   const canonical = absoluteUrl(path);
+  const images = image ? [{ url: absoluteUrl(image), alt: title }] : undefined;
   return {
     title,
     description,
@@ -45,7 +47,8 @@ export function buildPageMetadata({ title, description, path, noIndex = false }:
       description,
       url: canonical,
       siteName: siteConfig.name,
-      type: "website"
+      type: "website",
+      images
     },
     twitter: {
       card: "summary",
@@ -65,6 +68,10 @@ export function buildPageMetadata({ title, description, path, noIndex = false }:
 
 export function pageMetadata(title: string, description: string, path = "/", noIndex = false): Metadata {
   return buildPageMetadata({ title, description, path, noIndex });
+}
+
+export function pageMetadataWithImage(title: string, description: string, path: string, image: string, noIndex = false): Metadata {
+  return buildPageMetadata({ title, description, path, image, noIndex });
 }
 
 export function websiteJsonLd() {
@@ -167,6 +174,59 @@ export function guideItemListJsonLd(name: string, path: string, items: Guide[]) 
       name: guide.title,
       url: absoluteUrl(`/guides/${guide.slug}/`)
     }))
+  };
+}
+
+export function webPageJsonLd(name: string, description: string, path: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name,
+    description,
+    url: absoluteUrl(path),
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name
+    }
+  };
+}
+
+export function collectionPageJsonLd(name: string, description: string, path: string, items: Array<{ name: string; path: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    description,
+    url: absoluteUrl(path),
+    hasPart: items.map((item) => ({
+      "@type": "WebPage",
+      name: item.name,
+      url: absoluteUrl(item.path)
+    }))
+  };
+}
+
+export function resourceArticleJsonLd(title: string, description: string, path: string, lastReviewedAt: string) {
+  const url = absoluteUrl(path);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    datePublished: lastReviewedAt,
+    dateModified: lastReviewedAt,
+    author: {
+      "@type": "Organization",
+      name: siteConfig.author
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url
+    }
   };
 }
 

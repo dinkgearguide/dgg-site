@@ -45,6 +45,17 @@ export default function Home() {
           {start.map(([title, href, description]) => <CategoryCard key={href} title={title} href={href} description={description} />)}
         </div>
       </Section>
+      <section className="mx-auto max-w-6xl px-4 py-6">
+        <div className="rounded-lg border border-blue-100 bg-blue-50 p-6">
+          <p className="text-sm font-black uppercase tracking-widest text-court">Free beginner pickleball checklist</p>
+          <h2 className="mt-3 text-3xl font-black text-ink">Not sure what to bring to your first game?</h2>
+          <p className="mt-3 max-w-3xl leading-8 text-slate-700">Print the beginner gear checklist and avoid overbuying.</p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <a href="/pickleball-gear-checklist-printable/" className="inline-flex min-h-11 items-center justify-center rounded-md bg-court px-5 py-3 text-sm font-black text-white hover:bg-emerald-800 focus:outline-none focus:ring-4 focus:ring-emerald-200">Print the Checklist</a>
+            <a href="/resources/" className="inline-flex min-h-11 items-center justify-center rounded-md bg-white px-5 py-3 text-sm font-black text-ink shadow-sm hover:bg-slate-100 focus:outline-none focus:ring-4 focus:ring-emerald-200">Browse Beginner Resources</a>
+          </div>
+        </div>
+      </section>
       <Section title="Beginner Gear Guides">
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           <CategoryCard title="Pickleball Gear Checklist for Beginners" href="/gear-checklist/" description="The main checklist for what to buy first, what can wait, and how to avoid overbuying." />
