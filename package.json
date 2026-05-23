@@ -2,6 +2,7 @@
   "name": "dink-gear-guide",
   "version": "1.0.0",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "seo:generate": "tsx scripts/generate-sitemap.ts && tsx scripts/generate-robots.ts",
