@@ -28,7 +28,9 @@ const imageBySlug: Record<string, string> = {
   "backyard-pickleball-starter-kit": "/images/products/photos/backyard-starter-kit.jpg",
   "lightweight-control-paddle": "/images/products/photos/lightweight-control-paddle-graphite.jpg",
   "widebody-beginner-paddle": "/images/products/photos/widebody-beginner-paddle.jpg",
-  "balanced-all-around-paddle": "/images/products/photos/lightweight-control-paddle.jpg"
+  "balanced-all-around-paddle": "/images/products/photos/lightweight-control-paddle.jpg",
+  "indoor-pickleball-ball-pack": "/images/products/photos/indoor-pickleball-ball-pack.png",
+  "mixed-indoor-outdoor-ball-pack": "/images/products/photos/mixed-indoor-outdoor-ball-pack.png"
 };
 
 const affiliateUrlBySlug: Record<string, string> = {
