@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { CategoryCard } from "@/components/CategoryCard";
 import { DecisionFrameworkCallout } from "@/components/DecisionFrameworkCallout";
 import { Hero } from "@/components/Hero";
@@ -37,6 +38,11 @@ const homepageGuideSlugs = [
 export default function Home() {
   return (
     <main>
+      <Script
+        id="avantlink-affiliate-confirm"
+        src="https://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=917f17cc8730c4effaa0a26aaeccfd0e034d38f0"
+        strategy="afterInteractive"
+      />
       <JsonLd data={websiteJsonLd()} />
       <JsonLd data={organizationJsonLd()} />
       <Hero />
