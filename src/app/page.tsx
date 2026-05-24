@@ -40,7 +40,7 @@ export default function Home() {
     <main>
       <Script
         id="avantlink-affiliate-confirm"
-        src="https://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=917f17cc8730c4effaa0a26aaeccfd0e034d38f0"
+        src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=917f17cc8730c4effaa0a26aaeccfd0e034d38f0"
         strategy="afterInteractive"
       />
       <JsonLd data={websiteJsonLd()} />
