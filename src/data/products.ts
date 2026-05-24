@@ -38,7 +38,9 @@ const affiliateUrlBySlug: Record<string, string> = {
   "lightweight-control-paddle": "https://www.amazon.com/dp/B0D9PNTG78?tag=dinkgearguide-20",
   "widebody-beginner-paddle": "https://www.amazon.com/dp/B08XC88SYG?tag=dinkgearguide-20",
   "balanced-all-around-paddle": "https://www.amazon.com/dp/B0GHBWVD31?tag=dinkgearguide-20",
-  "outdoor-pickleball-ball-pack": "https://www.amazon.com/dp/B0CQBYTXRK?tag=dinkgearguide-20"
+  "outdoor-pickleball-ball-pack": "https://www.amazon.com/dp/B0CQBYTXRK?tag=dinkgearguide-20",
+  "indoor-pickleball-ball-pack": "https://www.amazon.com/dp/B07Q23Q17V?tag=dinkgearguide-20",
+  "mixed-indoor-outdoor-ball-pack": "https://www.amazon.com/dp/B0DM8YV5XQ?tag=dinkgearguide-20"
 };
 
 const baseFeatures: Record<ProductCategory, string[]> = {
@@ -56,14 +58,9 @@ const items: Array<[string, ProductCategory, string, SkillLevel, PriceTier, bool
   ["Two-Paddle Beginner Starter Set", "Starter Sets", "Two new players who want the basics", "Brand new", "Budget", true],
   ["Family Pickleball Starter Set", "Starter Sets", "Families learning together", "Brand new", "Mid-range", true],
   ["Backyard Pickleball Starter Kit", "Starter Sets", "Casual driveway games", "Brand new", "Budget", false],
-  ["Four-Player Recreation Set", "Starter Sets", "Group games and visitors", "Beginner", "Mid-range", false],
-  ["Compact Starter Set with Carry Bag", "Starter Sets", "Keeping gear together", "Brand new", "Mid-range", false],
   ["Lightweight Control Paddle", "Beginner Paddles", "Players who want easy handling", "Beginner", "Mid-range", true],
   ["Widebody Beginner Paddle", "Beginner Paddles", "More forgiving contact", "Beginner", "Budget", true],
   ["Balanced All-Around Paddle", "Beginner Paddles", "A first personal paddle", "Beginner", "Mid-range", true],
-  ["Soft Touch Practice Paddle", "Beginner Paddles", "Control drills and dinking", "Recreational", "Mid-range", false],
-  ["Durable Recreation Paddle", "Beginner Paddles", "Shared household use", "Beginner", "Budget", false],
-  ["Comfort Grip Beginner Paddle", "Beginner Paddles", "Players focused on handle feel", "Brand new", "Mid-range", false],
   ["Outdoor Pickleball Ball Pack", "Balls", "Outdoor courts and parks", "Beginner", "Budget", true],
   ["Indoor Pickleball Ball Pack", "Balls", "Gym and indoor court play", "Beginner", "Budget", true],
   ["Mixed Indoor Outdoor Ball Pack", "Balls", "Trying both court types", "Brand new", "Mid-range", false],
@@ -178,6 +175,32 @@ const featuredProductCopy: Record<string, Partial<Pick<Product, "shortDescriptio
       "Confirm the current listing includes the expected quantity and drawstring mesh bag.",
       "Choose colors that stand out against your local court surface.",
       "Keep a few spares in your bag because outdoor balls wear out and crack over time."
+    ]
+  },
+  "indoor-pickleball-ball-pack": {
+    shortDescription: "A 12-pack of indoor pickleballs for gym courts, rec centers, clinics, and players who need reliable indoor spares.",
+    longDescription: "An indoor pickleball ball pack is the right first buy when most of your games are in a gym, rec center, or other indoor court setting. The product details provided describe Franklin Sports X-26 indoor pickleballs with a 26-hole design, official size and weight, USA Pickleball approval for indoor tournament play, and a 12-ball pack size. For beginners, the main point is simple: indoor balls are built for indoor court surfaces and usually feel different from outdoor balls. Before buying, confirm the current pack quantity, color, ball model, approval status, and return policy on the retailer page.",
+    features: ["Indoor 26-hole design", "12-ball pack", "USA Pickleball approved"],
+    pros: ["Good fit for gym and rec center play", "Useful quantity for lessons, groups, and regular practice", "Designed specifically for indoor court surfaces"],
+    cons: ["Not the right first choice for outdoor park courts", "Indoor balls can feel softer than outdoor balls", "Approval status and product details should still be verified before tournament use"],
+    buyingTips: [
+      "Choose indoor balls if most of your games are in gyms or indoor rec centers.",
+      "Do not substitute indoor balls for outdoor court play unless your group specifically wants that feel.",
+      "Confirm the current listing is for the X-26 indoor model and the expected 12-pack quantity.",
+      "If sanctioned tournaments matter to you, verify current approval with the relevant governing body before buying."
+    ]
+  },
+  "mixed-indoor-outdoor-ball-pack": {
+    shortDescription: "A 6-pack of bright mixed-use pickleballs with a mesh bag for players who want one small spare set.",
+    longDescription: "A mixed indoor outdoor ball pack is useful for beginners who are not fully settled into one court routine yet, or who want a small spare pack to keep in a bag. The linked option is positioned as a CYCLOTRON 6-pack with bright green balls, 40-hole construction, TPE material, a mesh drawstring storage bag, and USAPA approval language. For new players, the appeal is convenience: a visible ball color, a carry bag, and a manageable quantity that works for practice, casual games, and gifting. Before buying, verify the current court suitability, approval status, pack quantity, color, and return policy on the retailer page.",
+    features: ["6-ball pack", "Bright high-visibility color", "Mesh drawstring bag"],
+    pros: ["Convenient size for a beginner bag", "Storage bag helps keep balls together", "High-visibility color is easy to track"],
+    cons: ["Players with a fixed court type may prefer dedicated indoor or outdoor balls", "40-hole balls may feel different from softer indoor-only balls", "Approval and surface-use details should be verified before tournament play"],
+    buyingTips: [
+      "Choose this pack if you want a small spare set rather than a large bulk box.",
+      "Confirm the current listing still includes six balls and the mesh drawstring bag.",
+      "If most of your games are indoors, compare against a dedicated indoor ball pack before buying.",
+      "If sanctioned tournaments matter to you, verify current approval with the relevant governing body before buying."
     ]
   }
 };
