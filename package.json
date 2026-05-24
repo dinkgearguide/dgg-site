@@ -7,7 +7,8 @@
     "dev": "next dev",
     "seo:generate": "tsx scripts/generate-sitemap.ts && tsx scripts/generate-robots.ts",
     "seo:validate": "tsx scripts/validate-seo.ts",
-    "build": "npm run seo:generate && npm run seo:validate && next build",
+    "avantlink:verify": "tsx scripts/ensure-avantlink-tag.ts",
+    "build": "npm run seo:generate && npm run seo:validate && next build && npm run avantlink:verify",
     "lint": "eslint ."
   },
   "dependencies": {
