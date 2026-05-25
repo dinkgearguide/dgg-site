@@ -7,7 +7,7 @@ import { breadcrumbJsonLd, guideItemListJsonLd, pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata(
   "Beginner Pickleball Gear Guides | Dink Gear Guide",
-  "Simple beginner pickleball gear guides covering paddles, starter sets, balls, bags, gifts, backyard setups, and what new players can skip.",
+  "Simple beginner pickleball gear guides covering paddles, starter sets, balls, bags, backyard setups, and what new players can skip.",
   "/guides/"
 );
 

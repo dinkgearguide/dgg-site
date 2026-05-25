@@ -21,7 +21,7 @@ export function Hero() {
         <div className="max-w-3xl">
           <p className="text-sm font-bold uppercase tracking-widest text-emerald-200">Dink Gear Guide</p>
           <h1 className="mt-4 text-4xl font-black leading-tight text-white md:text-6xl">New to pickleball? Find the gear worth buying first.</h1>
-          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-100">Simple beginner-friendly guides for paddles, starter sets, balls, bags, accessories, and gifts — without the hype.</p>
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-100">Simple beginner-friendly guides for paddles, starter sets, balls, bags, and accessories — without the hype.</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/gear/" className="inline-flex min-h-12 items-center justify-center rounded-md bg-emerald-300 px-6 py-3 font-bold text-slate-950 hover:bg-emerald-200 focus:outline-none focus:ring-4 focus:ring-emerald-200">
               View Beginner Gear

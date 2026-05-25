@@ -8,7 +8,6 @@ const nav = [
   ["Paddles", "/beginner-paddles/"],
   ["Bags", "/bags/"],
   ["Balls", "/balls/"],
-  ["Gifts", "/gifts/"],
   ["All Gear", "/gear/"]
 ];
 

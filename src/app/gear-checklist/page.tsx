@@ -33,7 +33,7 @@ const playerSetupRows = [
   ["Weekly beginner", "One better personal paddle, spare balls, compact bag, overgrip.", "Prioritize comfort and consistency."],
   ["Couple/family", "Starter set with enough paddles and balls for the group.", "Check the exact set contents before buying."],
   ["Backyard player", "Portable net, outdoor balls, paddles, court markers.", "Measure the play space first."],
-  ["Gift buyer", "Balls, bag, towel, overgrip, or starter kit.", "Avoid guessing advanced paddle preferences."]
+  ["Group organizer", "Starter set, outdoor balls, simple bag, and water for shared casual play.", "Avoid buying duplicate accessories before the group has a routine."]
 ];
 
 const faqs = [

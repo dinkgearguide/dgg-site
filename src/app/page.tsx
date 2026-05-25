@@ -68,11 +68,10 @@ export default function Home() {
         </div>
       </Section>
       <Section title="Featured Categories">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           <CategoryCard title="Paddles" href="/beginner-paddles/" description="Control-first paddles for newer players." />
           <CategoryCard title="Balls" href="/balls/" description="Indoor and outdoor ball packs explained simply." />
           <CategoryCard title="Bags" href="/bags/" description="Sling, backpack, and tote options for court gear." />
-          <CategoryCard title="Gifts" href="/gifts/" description="Practical gift ideas for brand-new players." />
         </div>
       </Section>
       <Section title="What New Players Actually Need">

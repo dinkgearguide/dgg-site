@@ -2,7 +2,7 @@
 
 > Beginner-friendly pickleball gear without the guesswork.
 
-Dink Gear Guide is a static affiliate gear guide for new and recreational pickleball players. It helps visitors understand starter sets, beginner paddles, balls, bags, portable nets, grip tape, court accessories, and gifts without fake urgency, fake reviews, live price scraping, or medical claims.
+Dink Gear Guide is a static affiliate gear guide for new and recreational pickleball players. It helps visitors understand starter sets, beginner paddles, balls, bags, portable nets, grip tape, and court accessories without fake urgency, fake reviews, live price scraping, or medical claims.
 
 Canonical site: https://dinkgearguide.com/
 Contact: info@dinkgearguide.com
@@ -20,7 +20,6 @@ Contact: info@dinkgearguide.com
 - [Beginner Paddles](https://dinkgearguide.com/beginner-paddles/): Beginner paddle factors like weight, grip size, control, comfort, and price tier.
 - [Bags](https://dinkgearguide.com/bags/): Sling bags, backpacks, and tote-style pickleball bags.
 - [Balls](https://dinkgearguide.com/balls/): Indoor vs. outdoor pickleball balls.
-- [Gifts](https://dinkgearguide.com/gifts/): Practical pickleball gift ideas.
 - [All Gear](https://dinkgearguide.com/gear/): Searchable product catalog.
 
 ## Product Catalog

@@ -5,8 +5,7 @@ export type ProductCategory =
   | "Bags"
   | "Nets"
   | "Grip Tape"
-  | "Court Accessories"
-  | "Gifts";
+  | "Court Accessories";
 
 export type PriceTier = "Budget" | "Mid-range" | "Premium";
 

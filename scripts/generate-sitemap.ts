@@ -20,7 +20,6 @@ const staticEntries: SitemapEntry[] = [
   { path: "/beginner-paddles/", lastmod: today, changefreq: "monthly", priority: "0.8" },
   { path: "/bags/", lastmod: today, changefreq: "monthly", priority: "0.8" },
   { path: "/balls/", lastmod: today, changefreq: "monthly", priority: "0.8" },
-  { path: "/gifts/", lastmod: today, changefreq: "monthly", priority: "0.8" },
   { path: "/guides/", lastmod: today, changefreq: "weekly", priority: "0.8" },
   { path: "/resources/", lastmod: today, changefreq: "weekly", priority: "0.75" },
   { path: "/pickleball-club-beginner-gear-handout/", lastmod: today, changefreq: "monthly", priority: "0.7" },

@@ -184,7 +184,7 @@ export const guides: Guide[] = [
         paragraphs: ["If your bag is annoying to carry, you will stop using it. Start with the core items and add only what you repeatedly wish you had during games. Extra balls and water usually matter more than specialized accessories."]
       }
     ],
-    relatedGuideSlugs: ["what-to-buy-before-your-first-pickleball-game", "what-pickleball-gear-can-beginners-skip", "pickleball-gifts-for-beginners"],
+    relatedGuideSlugs: ["what-to-buy-before-your-first-pickleball-game", "what-pickleball-gear-can-beginners-skip", "indoor-vs-outdoor-pickleball-balls"],
     categoryLinks: [{ label: "Bags", href: "/bags/" }, { label: "Balls", href: "/balls/" }, { label: "Court Accessories", href: "/gear/" }]
   },
   {
@@ -219,39 +219,6 @@ export const guides: Guide[] = [
     ],
     relatedGuideSlugs: ["pickleball-starter-set-vs-single-paddle", "what-pickleball-gear-can-beginners-skip", "what-to-buy-before-your-first-pickleball-game"],
     categoryLinks: [{ label: "Beginner Paddles", href: "/beginner-paddles/" }, { label: "Starter Sets", href: "/starter-sets/" }, { label: "Gear Checklist", href: "/gear-checklist/" }]
-  },
-  {
-    slug: "pickleball-gifts-for-beginners",
-    title: "Pickleball Gifts for Beginners: Practical Ideas They’ll Use",
-    description: "Find practical pickleball gift ideas for new players, including starter gear, balls, bags, paddle accessories, and court essentials.",
-    category: "Gifts",
-    readingTime: "6 min read",
-    lastReviewedAt: reviewed,
-    intro: "The best pickleball gifts for beginners are practical and easy to use: balls, bags, overgrips, towels, paddle covers, and simple starter gear. Avoid gifts that require knowing a player’s exact paddle preferences unless they asked for a specific item. Useful court basics are safer than flashy accessories.",
-    sections: [
-      {
-        title: "Gift idea matrix",
-        table: {
-          headers: ["Recipient", "Good gift", "Avoid"],
-          rows: [
-            ["Brand-new player", "Starter set or ball pack", "Advanced training tools"],
-            ["Weekly beginner", "Bag, overgrips, towel", "Random premium paddle"],
-            ["Family group", "Shared starter set", "Single specialized paddle"],
-            ["Backyard player", "Net accessories and outdoor balls", "Indoor-only balls"]
-          ]
-        }
-      },
-      {
-        title: "Safe practical gifts",
-        checklist: ["Outdoor or indoor balls", "Compact sling bag", "Overgrip pack", "Paddle cover", "Court towel", "Simple accessory bundle"]
-      },
-      {
-        title: "How to choose",
-        paragraphs: ["Match the gift to how the person plays. Someone trying pickleball for the first time may appreciate a basic kit. Someone already attending open play may get more use from extra balls, a better bag, or fresh grip tape."]
-      }
-    ],
-    relatedGuideSlugs: ["what-to-keep-in-your-pickleball-bag", "pickleball-starter-set-vs-single-paddle", "backyard-pickleball-setup-for-beginners"],
-    categoryLinks: [{ label: "Gifts", href: "/gifts/" }, { label: "Bags", href: "/bags/" }, { label: "Starter Sets", href: "/starter-sets/" }]
   },
   {
     slug: "backyard-pickleball-setup-for-beginners",

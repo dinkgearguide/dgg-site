@@ -7,8 +7,7 @@ const descriptions: Record<ProductCategory, string> = {
   Bags: "A beginner-friendly way to carry paddles, balls, water, and small court items.",
   Nets: "A portable net option for driveways, cul-de-sacs, and casual practice spaces.",
   "Grip Tape": "A small upgrade that can make an older or slippery paddle easier to hold.",
-  "Court Accessories": "Useful extras for organizing games, practice, and shared court time.",
-  Gifts: "A practical pickleball gift idea that does not require expert gear knowledge."
+  "Court Accessories": "Useful extras for organizing games, practice, and shared court time."
 };
 
 const imageByCategory: Record<ProductCategory, string> = {
@@ -18,8 +17,7 @@ const imageByCategory: Record<ProductCategory, string> = {
   Bags: "/images/products/photos/bag.jpg",
   Nets: "/images/products/photos/net.jpg",
   "Grip Tape": "/images/products/photos/grip-tape.jpg",
-  "Court Accessories": "/images/products/photos/accessories.jpg",
-  Gifts: "/images/products/photos/gift.jpg"
+  "Court Accessories": "/images/products/photos/accessories.jpg"
 };
 
 const imageBySlug: Record<string, string> = {
@@ -58,8 +56,7 @@ const baseFeatures: Record<ProductCategory, string[]> = {
   Bags: ["Paddle storage", "Ball pocket", "Daily-carry size"],
   Nets: ["Portable frame", "Practice-friendly setup", "Storage bag included"],
   "Grip Tape": ["Comfort texture", "Easy replacement", "Low-cost refresh"],
-  "Court Accessories": ["Simple organization", "Practice friendly", "Easy to pack"],
-  Gifts: ["Beginner friendly", "Easy to give", "Practical court use"]
+  "Court Accessories": ["Simple organization", "Practice friendly", "Easy to pack"]
 };
 
 const items: Array<[string, ProductCategory, string, SkillLevel, PriceTier, boolean]> = [
@@ -86,11 +83,7 @@ const items: Array<[string, ProductCategory, string, SkillLevel, PriceTier, bool
   ["Ball Holder Clip", "Court Accessories", "Keeping spare balls handy", "Beginner", "Budget", false],
   ["Practice Cone Set", "Court Accessories", "Simple footwork drills", "Recreational", "Budget", false],
   ["Scorekeeping Wristband", "Court Accessories", "Remembering casual scores", "Beginner", "Budget", false],
-  ["Court Line Tape", "Court Accessories", "Temporary home court marking", "Recreational", "Budget", false],
-  ["Pickleball Gift Bundle", "Gifts", "A useful gift basket", "Brand new", "Mid-range", true],
-  ["New Player Gift Kit", "Gifts", "Someone starting this month", "Brand new", "Budget", true],
-  ["Fun Court Accessory Gift Set", "Gifts", "Light practical gifts", "Beginner", "Budget", false],
-  ["Premium Pickleball Gift Kit", "Gifts", "A larger beginner gift", "Recreational", "Premium", false]
+  ["Court Line Tape", "Court Accessories", "Temporary home court marking", "Recreational", "Budget", false]
 ];
 
 const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");

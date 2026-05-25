@@ -6,7 +6,6 @@ const links = [
   ["Beginner Paddles", "/beginner-paddles/"],
   ["Balls", "/balls/"],
   ["Bags", "/bags/"],
-  ["Gifts", "/gifts/"],
   ["Guides", "/guides/"],
   ["Resources", "/resources/"]
 ];

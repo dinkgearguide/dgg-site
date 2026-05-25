@@ -22,8 +22,7 @@ const buyingGuides: ResourceCardItem[] = [
   { title: "Best Pickleball Starter Sets", description: "Starter set advice for couples, families, casual groups, and backyard play.", category: "Starter sets", href: "/starter-sets/" },
   { title: "Best Beginner Pickleball Paddles", description: "Beginner-friendly paddle guidance focused on control, grip, comfort, and value.", category: "Paddles", href: "/beginner-paddles/" },
   { title: "Indoor vs Outdoor Pickleball Balls", description: "Understand ball type differences and choose the right pack for your court.", category: "Balls", href: "/guides/indoor-vs-outdoor-pickleball-balls/" },
-  { title: "Best Pickleball Bags for Beginners", description: "Compare slings, backpacks, and totes for simple court carry.", category: "Bags", href: "/bags/" },
-  { title: "Pickleball Gifts for Beginners", description: "Practical gift ideas new players are likely to use.", category: "Gifts", href: "/guides/pickleball-gifts-for-beginners/" }
+  { title: "Best Pickleball Bags for Beginners", description: "Compare slings, backpacks, and totes for simple court carry.", category: "Bags", href: "/bags/" }
 ];
 
 const checklists: ResourceCardItem[] = [

@@ -6,7 +6,7 @@ Tagline: Beginner-friendly pickleball gear without the guesswork.
 
 ## Site Purpose
 
-Dink Gear Guide helps new and recreational pickleball players find beginner-friendly paddles, starter sets, balls, bags, gifts, and court accessories without overcomplicating the buying process.
+Dink Gear Guide helps new and recreational pickleball players find beginner-friendly paddles, starter sets, balls, bags, and court accessories without overcomplicating the buying process.
 
 The site is static. It does not run checkout, payments, accounts, live price scraping, inventory management, backend forms, or user tracking. Product recommendations should be independently reviewed before purchase.
 
@@ -23,14 +23,12 @@ The site is static. It does not run checkout, payments, accounts, live price scr
 - https://dinkgearguide.com/guides/what-pickleball-gear-can-beginners-skip/ - beginner gear to skip at first
 - https://dinkgearguide.com/guides/what-to-keep-in-your-pickleball-bag/ - pickleball bag checklist
 - https://dinkgearguide.com/guides/how-to-choose-your-first-pickleball-paddle/ - how to choose a first paddle
-- https://dinkgearguide.com/guides/pickleball-gifts-for-beginners/ - practical pickleball gifts for beginners
 - https://dinkgearguide.com/guides/backyard-pickleball-setup-for-beginners/ - backyard pickleball setup
 - https://dinkgearguide.com/gear-decision-framework/ - beginner pickleball gear decision framework
 - https://dinkgearguide.com/starter-sets/ - best pickleball starter sets
 - https://dinkgearguide.com/beginner-paddles/ - best beginner pickleball paddles
 - https://dinkgearguide.com/bags/ - best pickleball bags
 - https://dinkgearguide.com/balls/ - best pickleball balls
-- https://dinkgearguide.com/gifts/ - best pickleball gifts
 - https://dinkgearguide.com/gear/ - all pickleball gear
 
 ## Product Categories
@@ -42,7 +40,6 @@ The site is static. It does not run checkout, payments, accounts, live price scr
 - Nets: portable backyard, driveway, and practice nets.
 - Grip Tape: grip tape rolls and overgrip packs.
 - Court Accessories: towels, bottle kits, paddle covers, ball clips, cones, scorekeeping aids, and line tape.
-- Gifts: practical pickleball gifts for brand-new and recreational players.
 
 ## Product Pages
 
@@ -70,10 +67,6 @@ The site is static. It does not run checkout, payments, accounts, live price scr
 - Practice Cone Set: https://dinkgearguide.com/gear/practice-cone-set/
 - Scorekeeping Wristband: https://dinkgearguide.com/gear/scorekeeping-wristband/
 - Court Line Tape: https://dinkgearguide.com/gear/court-line-tape/
-- Pickleball Gift Bundle: https://dinkgearguide.com/gear/pickleball-gift-bundle/
-- New Player Gift Kit: https://dinkgearguide.com/gear/new-player-gift-kit/
-- Fun Court Accessory Gift Set: https://dinkgearguide.com/gear/fun-court-accessory-gift-set/
-- Premium Pickleball Gift Kit: https://dinkgearguide.com/gear/premium-pickleball-gift-kit/
 
 ## Editorial Rules
 

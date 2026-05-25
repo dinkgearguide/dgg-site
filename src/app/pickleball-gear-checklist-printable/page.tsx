@@ -48,7 +48,7 @@ const kitRows: BeginnerKitRow[] = [
   { playerType: "Weekly beginner", setup: "One comfortable beginner paddle, spare balls, compact bag, and overgrip.", skip: "Multiple cheap paddles you will replace quickly.", guideLabel: "Choose your first paddle", guideHref: "/guides/how-to-choose-your-first-pickleball-paddle/" },
   { playerType: "Couple or family", setup: "Starter set with enough paddles and balls for the group.", skip: "Single-player specialty gear.", guideLabel: "Starter set vs paddle", guideHref: "/guides/pickleball-starter-set-vs-single-paddle/" },
   { playerType: "Backyard player", setup: "Portable net, outdoor balls, paddles, and temporary court markers.", skip: "Indoor-only balls and unused accessories.", guideLabel: "Backyard setup", guideHref: "/guides/backyard-pickleball-setup-for-beginners/" },
-  { playerType: "Gift buyer", setup: "Balls, bag, towel, overgrips, paddle cover, or a simple starter kit.", skip: "Advanced paddle choices unless requested.", guideLabel: "Beginner gifts", guideHref: "/guides/pickleball-gifts-for-beginners/" }
+  { playerType: "Group organizer", setup: "Starter set, outdoor balls, simple bag, and water for shared casual play.", skip: "Advanced paddle choices until regular players know their preferences.", guideLabel: "Starter set vs. paddle", guideHref: "/guides/pickleball-starter-set-vs-single-paddle/" }
 ];
 
 export default function PrintableChecklistPage() {

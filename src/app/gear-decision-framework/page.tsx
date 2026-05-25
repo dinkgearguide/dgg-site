@@ -5,7 +5,7 @@ import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata(
   "Beginner Pickleball Gear Decision Framework | Dink Gear Guide",
-  "The beginner-first framework Dink Gear Guide uses to evaluate pickleball paddles, starter sets, balls, bags, accessories, and gifts.",
+  "The beginner-first framework Dink Gear Guide uses to evaluate pickleball paddles, starter sets, balls, bags, and accessories.",
   "/gear-decision-framework/"
 );
 
