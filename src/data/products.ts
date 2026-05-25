@@ -30,7 +30,10 @@ const imageBySlug: Record<string, string> = {
   "widebody-beginner-paddle": "/images/products/photos/widebody-beginner-paddle.jpg",
   "balanced-all-around-paddle": "/images/products/photos/lightweight-control-paddle.jpg",
   "indoor-pickleball-ball-pack": "/images/products/photos/indoor-pickleball-ball-pack.png",
-  "mixed-indoor-outdoor-ball-pack": "/images/products/photos/mixed-indoor-outdoor-ball-pack.png"
+  "mixed-indoor-outdoor-ball-pack": "/images/products/photos/mixed-indoor-outdoor-ball-pack.png",
+  "compact-pickleball-sling-bag": "/images/products/photos/compact-pickleball-sling-bag.png",
+  "pickleball-backpack": "/images/products/photos/pickleball-backpack.png",
+  "tote-style-pickleball-bag": "/images/products/photos/tote-style-pickleball-bag.png"
 };
 
 const affiliateUrlBySlug: Record<string, string> = {
@@ -42,7 +45,10 @@ const affiliateUrlBySlug: Record<string, string> = {
   "balanced-all-around-paddle": "https://www.amazon.com/dp/B0GHBWVD31?tag=dinkgearguide-20",
   "outdoor-pickleball-ball-pack": "https://www.amazon.com/dp/B0CQBYTXRK?tag=dinkgearguide-20",
   "indoor-pickleball-ball-pack": "https://www.amazon.com/dp/B07Q23Q17V?tag=dinkgearguide-20",
-  "mixed-indoor-outdoor-ball-pack": "https://www.amazon.com/dp/B0DM8YV5XQ?tag=dinkgearguide-20"
+  "mixed-indoor-outdoor-ball-pack": "https://www.amazon.com/dp/B0DM8YV5XQ?tag=dinkgearguide-20",
+  "compact-pickleball-sling-bag": "https://www.amazon.com/dp/B075W31JYV?tag=dinkgearguide-20",
+  "pickleball-backpack": "https://www.amazon.com/dp/B0CJ5ZV4X4?tag=dinkgearguide-20",
+  "tote-style-pickleball-bag": "https://www.amazon.com/dp/B0BX6VSCG6?tag=dinkgearguide-20"
 };
 
 const baseFeatures: Record<ProductCategory, string[]> = {
@@ -69,7 +75,6 @@ const items: Array<[string, ProductCategory, string, SkillLevel, PriceTier, bool
   ["Compact Pickleball Sling Bag", "Bags", "One paddle and light carry", "Beginner", "Budget", true],
   ["Pickleball Backpack", "Bags", "Regular players carrying more gear", "Recreational", "Mid-range", true],
   ["Tote-Style Pickleball Bag", "Bags", "Simple open storage", "Beginner", "Mid-range", false],
-  ["Two-Paddle Court Bag", "Bags", "Couples or shared gear", "Beginner", "Mid-range", false],
   ["Portable Backyard Net", "Nets", "Home practice sessions", "Recreational", "Premium", true],
   ["Driveway Practice Net", "Nets", "Short practice blocks at home", "Beginner", "Mid-range", false],
   ["Half-Court Practice Net", "Nets", "Dink and reset drills", "Recreational", "Mid-range", false],
@@ -203,6 +208,45 @@ const featuredProductCopy: Record<string, Partial<Pick<Product, "shortDescriptio
       "Confirm the current listing still includes six balls and the mesh drawstring bag.",
       "If most of your games are indoors, compare against a dedicated indoor ball pack before buying.",
       "If sanctioned tournaments matter to you, verify current approval with the relevant governing body before buying."
+    ]
+  },
+  "compact-pickleball-sling-bag": {
+    shortDescription: "A pickleball-specific sling bag for carrying paddles, balls, a phone, keys, and a water bottle to casual games.",
+    longDescription: "A compact pickleball sling bag is a practical step up from carrying loose paddles and balls by hand. The linked option is positioned as a pickleball-specific sling bag with large storage pockets, room for multiple paddles, accessory storage, a water-bottle pocket, a fence hook, and an adjustable shoulder strap. For beginners, the main value is organization: keeping paddles, balls, keys, phone, towel, and small extras in one grab-and-go bag. Before buying, confirm the current color, dimensions, paddle capacity, pocket layout, strap style, and return policy on the retailer page.",
+    features: ["Pickleball-specific sling design", "Multiple gear pockets", "Fence hook and bottle storage"],
+    pros: ["Keeps beginner gear organized in one place", "Useful for open play and rec center sessions", "More compact than a large backpack or tournament bag"],
+    cons: ["May be more storage than a first-time player needs", "Sling fit depends on body size and carry preference", "Paddle capacity should be checked against your actual gear"],
+    buyingTips: [
+      "Choose a sling bag if you carry one to three paddles plus balls, water, and small accessories.",
+      "Confirm the current listing details before assuming exact paddle capacity or pocket layout.",
+      "Check whether the bottle pocket and fence hook match how you use local courts.",
+      "If you only play occasionally, compare this with a simple tote before buying."
+    ]
+  },
+  "pickleball-backpack": {
+    shortDescription: "A larger pickleball backpack for players who carry paddles, shoes, water, and court extras in separate compartments.",
+    longDescription: "A pickleball backpack makes sense for beginners who have moved beyond a light sling bag and want more organized storage for regular games. The linked option is positioned as a 35.22-liter backpack made from polyester and polyurethane with four compartments, including a back paddle pocket, a separate shoe compartment, an external water bottle pocket, zipper closures, shoulder straps, and a listed weight of 2.2 pounds. For recreational players, the main advantage is keeping paddles, shoes, water, balls, towel, and small accessories separated instead of piled into one open bag. Before buying, confirm the current dimensions, storage volume, compartment layout, material, color, weight, and return policy on the retailer page.",
+    features: ["35.22-liter storage volume", "Four-compartment organization", "Shoe, paddle, and bottle pockets"],
+    pros: ["Better organization than a basic tote", "Good fit for weekly players carrying more gear", "Dedicated pockets help separate paddles, shoes, water, and accessories"],
+    cons: ["Bigger than some brand-new players need", "Backpack fit and weight depend on how much you pack", "Pocket layout should be checked against your actual gear"],
+    buyingTips: [
+      "Choose a backpack if you regularly carry shoes, water, balls, and more than one paddle.",
+      "Confirm the current listing still describes the expected storage volume and compartment layout.",
+      "Check whether the shoe compartment matters for how you travel to courts.",
+      "If you only carry one paddle and a few balls, compare this with a smaller sling bag before buying."
+    ]
+  },
+  "tote-style-pickleball-bag": {
+    shortDescription: "A structured pickleball tote for players who want open storage plus paddle, bottle, and side-pocket organization.",
+    longDescription: "A tote-style pickleball bag is a simple choice for beginners who want quick access to gear without wearing a backpack or sling. The linked option is positioned as a compact sports tote measuring 13 inches high by 14 inches wide by 6 inches deep, with one large zippered compartment, a front slash pocket, a paddle pocket, two side pockets, and a shoulder strap. For new players, the appeal is straightforward storage for a paddle, balls, towel, clothing layer, water bottle, sunglasses, and small court items. Before buying, confirm the current dimensions, pocket layout, strap style, color, and return policy on the retailer page.",
+    features: ["Large zippered compartment", "Paddle pocket and two side pockets", "Shoulder-strap tote design"],
+    pros: ["Easy to load and reach into between games", "Good fit for players who prefer a tote over a backpack", "Side pockets help separate water and small accessories"],
+    cons: ["Less hands-free than a backpack", "May offer less structure than a dedicated paddle backpack", "Exact pocket layout should be confirmed before buying"],
+    buyingTips: [
+      "Choose a tote if you prefer open, quick-access storage over a sling or backpack.",
+      "Confirm the current dimensions and pocket layout on the retailer page.",
+      "Check whether the shoulder strap style fits how far you walk to local courts.",
+      "If you carry shoes or several paddles, compare this with a larger backpack before buying."
     ]
   }
 };

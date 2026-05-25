@@ -58,7 +58,6 @@ The site is static. It does not run checkout, payments, accounts, live price scr
 - Compact Pickleball Sling Bag: https://dinkgearguide.com/gear/compact-pickleball-sling-bag/
 - Pickleball Backpack: https://dinkgearguide.com/gear/pickleball-backpack/
 - Tote-Style Pickleball Bag: https://dinkgearguide.com/gear/tote-style-pickleball-bag/
-- Two-Paddle Court Bag: https://dinkgearguide.com/gear/two-paddle-court-bag/
 - Portable Backyard Net: https://dinkgearguide.com/gear/portable-backyard-net/
 - Driveway Practice Net: https://dinkgearguide.com/gear/driveway-practice-net/
 - Half-Court Practice Net: https://dinkgearguide.com/gear/half-court-practice-net/
